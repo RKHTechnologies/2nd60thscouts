@@ -22,7 +22,7 @@ function App() {
     <>
       <GlobalStyle />
       <AppContainer>
-        2nd 60th Scouts
+        2nd 60th Scouts Updated text
       </AppContainer>
     </>
   );
