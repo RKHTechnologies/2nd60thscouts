@@ -17,12 +17,17 @@ const AppContainer = styled.div`
   font-size: 5em;
 `;
 
+const Test = styled.span`
+  font-size: 2em;
+  color: lightblue;
+`;
+
 function App() {
   return (
     <>
       <GlobalStyle />
       <AppContainer>
-        2nd 60th Scouts Updated text
+        2nd 60th Scouts Revert <Test>Testing text</Test>
       </AppContainer>
     </>
   );
