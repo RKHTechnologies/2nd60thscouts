@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
 import styled from 'styled-components';
+import GlobalStyle from './Shared/GlobalStyle';
 
 const AppContainer = styled.div`
   position: absolute;
@@ -9,14 +9,22 @@ const AppContainer = styled.div`
   right: 0;
   left: 0;
   background: #444;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 900;
+  font-size: 5em;
 `;
 
 function App() {
   return (
-    <AppContainer>2nd 60th Scouts</AppContainer>
+    <>
+      <GlobalStyle />
+      <AppContainer>
+        2nd 60th Scouts
+      </AppContainer>
+    </>
   );
 }
 
