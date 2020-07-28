@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import GlobalStyle from '../Shared/GlobalStyle';
 
 const AppContainer = styled.div`
   position: absolute;
@@ -22,7 +23,12 @@ const AppContainer = styled.div`
 // `;
 
 const Home: FC = () => {
-    return <AppContainer>2nd 60th Home</AppContainer>;
+    return (
+      <>
+        <GlobalStyle />
+        <AppContainer>2nd 60th Home</AppContainer>
+      </>
+    );
 }
 
 export default Home;
