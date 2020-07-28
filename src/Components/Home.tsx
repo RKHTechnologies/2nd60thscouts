@@ -13,6 +13,7 @@ const AppContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   font-weight: 900;
   font-size: 5em;
 `;

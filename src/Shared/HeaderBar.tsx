@@ -84,27 +84,40 @@ const NavItemsRightContainer = styled.div`
     @media( max-width: 1100px ) {
         flex-direction: column;
         align-self: flex-start;
-        margin-top: 80px;
-        transition: all 0.3s ease;
-        height: ${(p:menuProps) => p.menuOpen ? "400px" : "0"};
+        /* margin-top: 90px; */
+        transition: all 0.3s ease; /* Should be able to remove this, as above has it already*/
+        height: ${(p:menuProps) => p.menuOpen ? "80vh" : "0"};
+
+        position: absolute;
+        top: 100px;
+        left: 50px;
+        right: 20px;
+        background: ${colours.Purple};
+
 
         ${HeaderButton} {
-            display: initial;
+            /* display: initial;
             margin-right: 20px;
             text-align: right;
             border-radius: 0;
-            background: ${colours.dark};
+            background: ${colours.Purple}; */
+            /* padding: 28px 25px; */
+            /* border: 0; */
             color: ${colours.light};
-            padding: 28px 25px;
-            border: 0;
+            text-align: center;
+
+            &:last-child {
+                margin-right: 0;
+            }
         }
     }
 `;
 
 const Burger = styled.div`
-    height: 3px;
+    height: 4px;
     width: 40px;
-    background: ${(p: menuProps) => p.menuOpen ? colours.primary : colours.dark};
+    border-radius: 2px;
+    background: ${(p: menuProps) => p.menuOpen ? colours.light : colours.primary};
     transition: all 0.5s ease;
     transition-property: height, width, transform;
     position: absolute;
@@ -115,9 +128,10 @@ const Burger = styled.div`
     &:before, &:after {
         content: '';
         position: absolute;
-        height: 3px;
+        height: 4px;
         width: 40px;
-        background: ${(p: menuProps) => p.menuOpen ? colours.primary : "inherit"};
+        border-radius: 2px;
+        background: ${(p: menuProps) => p.menuOpen ? colours.light : "inherit"};
         transition: transform 0.5s ease, opacity 0.5s ease;
     }
 
@@ -135,9 +149,9 @@ const Burger = styled.div`
 
 
 const BurgerContainer = styled.div`
-    height: 80px;
+    height: 100px;
     width: 100px;
-    background: ${(p: menuProps) => p.menuOpen ? "#000" : "transparent"};
+    background: ${(p: menuProps) => p.menuOpen ? colours.Purple : "transparent"};
     position: relative;
     align-self: flex-end;
     cursor: pointer;
@@ -145,10 +159,6 @@ const BurgerContainer = styled.div`
     top: 0;
     right: 20px;
     display: none;
-
-    &:hover > ${Burger} {
-        background: ${colours.primary};
-    }
 
     @media( max-width: 1100px ) {
         display: initial;
@@ -171,8 +181,8 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
         <HeaderNav stickyHeader={stickyHeader}>
             <HeaderNavContainer>
                 <Logo src={logo} alt="2nd 60th Leicester Scouts" onClick={() => handleNav("")} />
+                <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
                 <NavItemsRightContainer menuOpen={menuOpen}>
-                    <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
                     <HeaderButton onClick={() => handleNav("")}>Home</HeaderButton>
                     <HeaderButton onClick={() => handleNav("/about")}>About Us</HeaderButton>
                     <HeaderButton onClick={() => handleNav("/beavers")}>Beavers</HeaderButton>
