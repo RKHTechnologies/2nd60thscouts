@@ -16,7 +16,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     ::-webkit-scrollbar-thumb {
-        background: ${colours.lightGrey};
+        background: ${colours.grey20};
         border-radius: 20px;
     }
 `;

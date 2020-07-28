@@ -4,18 +4,39 @@ interface ColoursProps {
     light: string,
     dark: string,
     primary: string,
-    secondary: string,
-    darkGrey: string,
-    lightGrey: string
+    Purple: string,
+    Teal: string,
+    Red: string,
+    Pink: string,
+    Green: string,
+    Navy: string,
+    Blue: string,
+    Yellow: string,
+    grey80: string,
+    grey60: string,
+    grey40: string,
+    grey20: string,
+    grey5: string,
 }
 
 export const colours: ColoursProps = {
     light: "#FFF",
     dark: "#000",
-    primary: "#0D98E9",
-    secondary: "E6E7EA",
-    darkGrey: "#707070",
-    lightGrey: "#D2D2D2",
+    primary: "#7414DC",
+        
+    Purple: "#7414DC",
+    Teal: "#00A794",
+    Red: "#E22E12",
+    Pink: "#FFB4E6",
+    Green: "#23A950",
+    Navy: "#003982",
+    Blue: "#006DDF",
+    Yellow: "#FFE627",
+    grey80: "#333333",
+    grey60: "#666666",
+    grey40: "#999999",
+    grey20: "#CCCCCC",
+    grey5: "#F2F2F2",
 }
 
 
