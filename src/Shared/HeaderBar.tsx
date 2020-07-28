@@ -158,11 +158,11 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
             <Logo src={logo} alt="2nd 60th Leicester Scouts" />
             <NavItemsRightContainer menuOpen={menuOpen}>
                 <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
-                <HeaderButton href="#about" onClick={() => setMenuOpen(false)}>ABOUT</HeaderButton>
-                <HeaderButton href="#testimonials" onClick={() => setMenuOpen(false)}>TESTIMONIALS</HeaderButton>
-                <HeaderButton href="#partners" onClick={() => setMenuOpen(false)}>PARTNERS</HeaderButton>
-                <HeaderButton href="#services" onClick={() => setMenuOpen(false)}>SERVICES</HeaderButton>
-                <HeaderButton href="#contact" onClick={() => setMenuOpen(false)}>CONTACT</HeaderButton>
+                <HeaderButton href="#about" onClick={() => setMenuOpen(false)}>About Us</HeaderButton>
+                <HeaderButton href="#beavers" onClick={() => setMenuOpen(false)}>Beavers</HeaderButton>
+                <HeaderButton href="#cubs" onClick={() => setMenuOpen(false)}>Cubs</HeaderButton>
+                <HeaderButton href="#Scouts" onClick={() => setMenuOpen(false)}>Scouts</HeaderButton>
+                <HeaderButton href="#Explorers" onClick={() => setMenuOpen(false)}>Explorers</HeaderButton>
             </NavItemsRightContainer>
         </HeaderNavContainer>
     );
