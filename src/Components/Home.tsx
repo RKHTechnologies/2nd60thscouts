@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import GlobalStyle from '../Shared/GlobalStyle';
 
 const AppContainer = styled.div`
   position: absolute;
@@ -17,15 +16,10 @@ const AppContainer = styled.div`
   font-size: 5em;
 `;
 
-// const Test = styled.span`
-//   font-size: 2em;
-//   color: lightblue;
-// `;
-
 const Home: FC = () => {
     return (
       <>
-        <GlobalStyle />
+        
         <AppContainer>2nd 60th Home</AppContainer>
       </>
     );
