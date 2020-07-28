@@ -84,8 +84,6 @@ const NavItemsRightContainer = styled.div`
     @media( max-width: 1100px ) {
         flex-direction: column;
         align-self: flex-start;
-        /* margin-top: 90px; */
-        transition: all 0.3s ease; /* Should be able to remove this, as above has it already*/
         height: ${(p:menuProps) => p.menuOpen ? "80vh" : "0"};
 
         position: absolute;
@@ -96,15 +94,9 @@ const NavItemsRightContainer = styled.div`
 
 
         ${HeaderButton} {
-            /* display: initial;
-            margin-right: 20px;
-            text-align: right;
-            border-radius: 0;
-            background: ${colours.Purple}; */
-            /* padding: 28px 25px; */
-            /* border: 0; */
             color: ${colours.light};
             text-align: center;
+            font-size: 1.4em;
 
             &:last-child {
                 margin-right: 0;
@@ -189,6 +181,10 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
                     <HeaderButton onClick={() => handleNav("/cubs")}>Cubs</HeaderButton>
                     <HeaderButton onClick={() => handleNav("/scouts")}>Scouts</HeaderButton>
                     <HeaderButton onClick={() => handleNav("/explorers")}>Explorers</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/ourCalendar")}>Our Calendar</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/joinUs")}>Join Us</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/documents")}>Useful Documents</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/shop")}>Scout Shop</HeaderButton>
                 </NavItemsRightContainer>
             </HeaderNavContainer>
         </HeaderNav>
