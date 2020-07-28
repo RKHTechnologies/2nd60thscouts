@@ -88,7 +88,7 @@ const NavItemsRightContainer = styled.div`
 
         position: absolute;
         top: 100px;
-        left: 50px;
+        left: 20px;
         right: 20px;
         background: ${colours.Purple};
 
