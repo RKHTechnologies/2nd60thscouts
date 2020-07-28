@@ -1,6 +1,6 @@
 import React from "react";
 import { PageContainer } from "../Shared/SharedStyles";
-import logo from '../logo.svg';
+import logo from '../logo-v.svg';
 import styled from "styled-components";
 
 const LogoContainer = styled.img`

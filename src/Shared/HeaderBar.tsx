@@ -2,21 +2,34 @@ import React, { useState } from 'react';
 import logo from '../logo.svg';
 import styled from 'styled-components';
 import { colours, SharedSettings } from '../Shared/SharedStyles';
+import { useHistory } from 'react-router-dom';
+
+interface IProps {
+    stickyHeader?: boolean;
+}
 
 interface menuProps {
     menuOpen? : boolean;
 }
 
+const HeaderNav = styled.div`
+    position: ${(p: IProps) => p.stickyHeader ? "fixed" : "absolute"};
+    top: ${(p: IProps) => p.stickyHeader ? "0" : "100vh"};
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: ${colours.light};
+`;
+
 const HeaderNavContainer = styled.div` 
     width: 100%;
     max-width: ${SharedSettings.maxWidth};
-    margin: auto;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: ${(p: IProps) => p.stickyHeader ? "fixed" : "absolute"};
-    top: ${(p: IProps) => p.stickyHeader ? "0" : "100vh"};
     background: ${colours.light};
     color: ${colours.dark};
     z-index: 1;
@@ -37,32 +50,29 @@ const Logo = styled.img`
 `;
 
 
-const HeaderButton = styled.a`
+const HeaderButton = styled.button`
     height: 100%;
     background: transparent;
-    color: ${colours.dark};
-    border: none;
-    letter-spacing: 5px;
-    text-indent: 5px;
-    padding: 32px 20px 26px;
+    color: ${colours.Purple};
     cursor: pointer;
-    font-weight: 500;
+    padding: 15px 14px;
+    border: none;
     border-bottom: 2px solid transparent;
-    font-size: 1em;
+    border-top: 2px solid transparent;
+    font-weight: 500;
     text-decoration: none;
     
     &:hover {
-      color: ${colours.primary} !important;
-      border-color: ${colours.primary};
+      border-bottom-color: ${colours.primary};
     }
 
     &:focus {
       outline: 0;
     }
-
-    /* &:last-child {
-        margin-right: 50px;
-    } */
+ 
+    &:last-child {
+        margin-right: 20px;
+    } 
 `;
 
 const NavItemsRightContainer = styled.div`
@@ -146,25 +156,32 @@ const BurgerContainer = styled.div`
     }
 `;
 
-interface IProps {
-    stickyHeader?: boolean;
-}
-
 const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const history = useHistory();
+
+    const handleNav = (link: string): void => {
+        console.log("clicked nav", link);
+        setMenuOpen(false);
+        history.push(`${process.env.PUBLIC_URL}${link}`);
+    }
+
     return (
-        <HeaderNavContainer stickyHeader={stickyHeader}>
-            <Logo src={logo} alt="2nd 60th Leicester Scouts" />
-            <NavItemsRightContainer menuOpen={menuOpen}>
-                <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
-                <HeaderButton href="#about" onClick={() => setMenuOpen(false)}>About Us</HeaderButton>
-                <HeaderButton href="#beavers" onClick={() => setMenuOpen(false)}>Beavers</HeaderButton>
-                <HeaderButton href="#cubs" onClick={() => setMenuOpen(false)}>Cubs</HeaderButton>
-                <HeaderButton href="#Scouts" onClick={() => setMenuOpen(false)}>Scouts</HeaderButton>
-                <HeaderButton href="#Explorers" onClick={() => setMenuOpen(false)}>Explorers</HeaderButton>
-            </NavItemsRightContainer>
-        </HeaderNavContainer>
+        <HeaderNav stickyHeader={stickyHeader}>
+            <HeaderNavContainer>
+                <Logo src={logo} alt="2nd 60th Leicester Scouts" onClick={() => handleNav("")} />
+                <NavItemsRightContainer menuOpen={menuOpen}>
+                    <BurgerContainer menuOpen={menuOpen} onClick={() => setMenuOpen(!menuOpen)}><Burger menuOpen={menuOpen} /></BurgerContainer>
+                    <HeaderButton onClick={() => handleNav("")}>Home</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/about")}>About Us</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/beavers")}>Beavers</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/cubs")}>Cubs</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/scouts")}>Scouts</HeaderButton>
+                    <HeaderButton onClick={() => handleNav("/explorers")}>Explorers</HeaderButton>
+                </NavItemsRightContainer>
+            </HeaderNavContainer>
+        </HeaderNav>
     );
 }
 

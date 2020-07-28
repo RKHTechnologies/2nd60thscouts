@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
+import { colours } from '../Shared/SharedStyles';
 
 const AppContainer = styled.div`
   position: absolute;
@@ -7,8 +8,8 @@ const AppContainer = styled.div`
   bottom: 0;
   right: 0;
   left: 0;
-  background: #444;
-  color: white;
+  background: #bbb;
+  color: ${colours.Purple};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +20,7 @@ const AppContainer = styled.div`
 const Home: FC = () => {
     return (
       <>
-        
-        <AppContainer>2nd 60th Home</AppContainer>
+        <AppContainer>2nd 60th Leicester</AppContainer>
       </>
     );
 }
