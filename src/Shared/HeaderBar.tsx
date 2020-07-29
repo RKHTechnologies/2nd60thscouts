@@ -66,8 +66,9 @@ const HeaderButton = styled.button`
       border-bottom-color: ${colours.primary};
     }
 
-    &:focus {
+    &:focus {  
       outline: 0;
+      background: #eaeaea;
     }
  
     &:last-child {
