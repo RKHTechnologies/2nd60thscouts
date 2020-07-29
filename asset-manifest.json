@@ -1,25 +1,27 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.52b3ebb4.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.52b3ebb4.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.dcb8ba6b.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.dcb8ba6b.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
-    "static/js/2.5b328c01.chunk.js": "/2nd60thscouts/static/js/2.5b328c01.chunk.js",
-    "static/js/2.5b328c01.chunk.js.map": "/2nd60thscouts/static/js/2.5b328c01.chunk.js.map",
+    "static/js/2.4d03fa4b.chunk.js": "/2nd60thscouts/static/js/2.4d03fa4b.chunk.js",
+    "static/js/2.4d03fa4b.chunk.js.map": "/2nd60thscouts/static/js/2.4d03fa4b.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.8df244f1690ac20c3ba3f5c477235f01.js": "/2nd60thscouts/precache-manifest.8df244f1690ac20c3ba3f5c477235f01.js",
+    "precache-manifest.26350c56e184fdd4c6dc846ae50f1236.js": "/2nd60thscouts/precache-manifest.26350c56e184fdd4c6dc846ae50f1236.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.5b328c01.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.5b328c01.chunk.js.LICENSE.txt",
-    "static/media/hero.jpg": "/2nd60thscouts/static/media/hero.7b3594aa.jpg",
+    "static/js/2.4d03fa4b.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.4d03fa4b.chunk.js.LICENSE.txt",
+    "static/media/canoes.jpg": "/2nd60thscouts/static/media/canoes.7b3594aa.jpg",
+    "static/media/cub-high-ropes.jpg": "/2nd60thscouts/static/media/cub-high-ropes.0836c174.jpg",
+    "static/media/explorer-expedition.jpg": "/2nd60thscouts/static/media/explorer-expedition.7e385dd5.jpg",
     "static/media/logo-v.svg": "/2nd60thscouts/static/media/logo-v.20b01733.svg",
     "static/media/logo.svg": "/2nd60thscouts/static/media/logo.ba80e1f7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
-    "static/js/2.5b328c01.chunk.js",
+    "static/js/2.4d03fa4b.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.52b3ebb4.chunk.js"
+    "static/js/main.dcb8ba6b.chunk.js"
   ]
 }
