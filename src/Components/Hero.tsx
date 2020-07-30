@@ -11,16 +11,12 @@ const images = {
     'expedition': expedition,
 };
 
-interface HeroProps {
-    imageUrl: string;
-}
-
 const HeroBanner = styled.div`
     width: 100%;
     height: 80%;
     text-align: center;
     background: #eee;
-    background-image: url(${(p: HeroProps):string => p.imageUrl});
+    background-image: url(${(p: IProps):string => p.imageUrl ?? images['highRopes']});
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -29,7 +25,9 @@ const HeroBanner = styled.div`
 
 
 interface IProps {
-    image: 'highRopes' | 'canoes' | 'expedition';
+    image?: 'highRopes' | 'canoes' | 'expedition';
+    imageUrl?: string;
+    small?: boolean;
 }
 
 const Hero: FC<IProps> = ({image}: IProps) => {
