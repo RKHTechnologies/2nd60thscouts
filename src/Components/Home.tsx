@@ -49,7 +49,6 @@ const Home: FC = () => {
         <Section>    
           <div className="wrapper">
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
-            
           </div>
         </Section>
       </HomeContainer>
