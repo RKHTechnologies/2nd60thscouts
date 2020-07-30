@@ -11,12 +11,12 @@ const HomeContainer = styled.div`
   overflow-x: scroll;
 `;
 
-const About: FC = () => {
+const Cubs: FC = () => {
     return (
       <HomeContainer>
-        <Hero image="obstacle" />
+        <Hero image="cubs" />
       </HomeContainer>
     );
 }
 
-export default About;
+export default Cubs;
