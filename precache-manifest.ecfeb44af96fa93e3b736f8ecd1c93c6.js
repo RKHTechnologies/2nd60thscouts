@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6829fe85812b6247242bd76d227f672c",
+    "revision": "4573bf50f8f14aa6cd63a7ce8544ccf9",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "cac55dc3e375ef55b0b9",
+    "revision": "f70bdfbd435c1d5f5471",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "6280866c9c51ae5e4871",
-    "url": "/2nd60thscouts/static/js/2.34db2a15.chunk.js"
+    "revision": "e5e44e6dacdb527c2ede",
+    "url": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/2nd60thscouts/static/js/2.34db2a15.chunk.js.LICENSE.txt"
+    "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
+    "url": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cac55dc3e375ef55b0b9",
-    "url": "/2nd60thscouts/static/js/main.1c1a6c73.chunk.js"
+    "revision": "f70bdfbd435c1d5f5471",
+    "url": "/2nd60thscouts/static/js/main.a1c63412.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
@@ -56,7 +56,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2nd60thscouts/static/media/logo.ba80e1f7.svg"
   },
   {
-    "revision": "cf4ba15c251e81880fae5a848c456624",
-    "url": "/2nd60thscouts/static/media/scouts-in-a-row.cf4ba15c.jpg"
+    "revision": "83ac1664a3f8c62b43fc0f7518551acd",
+    "url": "/2nd60thscouts/static/media/scouts-life-jackets.83ac1664.jpg"
   }
 ]);
