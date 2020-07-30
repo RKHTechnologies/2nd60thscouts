@@ -2,16 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import Hero from '../Shared/Hero';
 import { useMediaQuery } from 'react-responsive';
-import { SharedSettings, colours } from '../Shared/SharedStyles';
-
-const HomeContainer = styled.div`
-  position: absolute;
-  top: 100px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  overflow-x: scroll;
-`;
+import { SharedSettings, colours, PageBodyContainer } from '../Shared/SharedStyles';
 
 const Section = styled.div`
   width: 100%;
@@ -44,14 +35,14 @@ const Home: FC = () => {
     console.log("mobile? ", mobile);
 
     return (
-      <HomeContainer>
+      <PageBodyContainer>
         <Hero image="highRopes"/>
         <Section>    
           <div className="wrapper">
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
           </div>
         </Section>
-      </HomeContainer>
+      </PageBodyContainer>
     );
 }
 
