@@ -14,7 +14,7 @@ const HomeContainer = styled.div`
 const Beavers: FC = () => {
     return (
       <HomeContainer>
-        <Hero image="beavers" />
+        <Hero image="beavers" small />
       </HomeContainer>
     );
 }

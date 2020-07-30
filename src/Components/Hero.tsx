@@ -21,11 +21,12 @@ const images = {
 
 interface HeroProps {
     imageUrl: string;
+    small?: boolean;
 }
 
 const HeroBanner = styled.div`
     width: 100%;
-    height: 80%;
+    height: ${(p: HeroProps):string => p.small ? "65%" : "80%"};
     text-align: center;
     background: #eee;
     background-image: url(${(p: HeroProps):string => p.imageUrl});
@@ -38,11 +39,12 @@ const HeroBanner = styled.div`
 
 interface IProps {
     image: 'highRopes' | 'canoes' | 'expedition' | 'obstacle' | 'beavers' | 'cubs' | 'scouts';
+    small?: boolean;
 }
 
-const Hero: FC<IProps> = ({image}: IProps) => {
+const Hero: FC<IProps> = ({image, small}: IProps) => {
     return (
-        <HeroBanner imageUrl={images[image]} />
+        <HeroBanner imageUrl={images[image]} small={small} />
     );
 }
 

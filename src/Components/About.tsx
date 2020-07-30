@@ -14,7 +14,7 @@ const HomeContainer = styled.div`
 const About: FC = () => {
     return (
       <HomeContainer>
-        <Hero image="obstacle" />
+        <Hero image="obstacle" small />
       </HomeContainer>
     );
 }
