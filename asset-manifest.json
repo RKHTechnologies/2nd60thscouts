@@ -1,31 +1,34 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.974cb8ba.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.974cb8ba.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.cde8656c.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.cde8656c.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
-    "static/js/2.2c9ffa50.chunk.js": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js",
-    "static/js/2.2c9ffa50.chunk.js.map": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js.map",
+    "static/js/2.680c0c9f.chunk.js": "/2nd60thscouts/static/js/2.680c0c9f.chunk.js",
+    "static/js/2.680c0c9f.chunk.js.map": "/2nd60thscouts/static/js/2.680c0c9f.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.b58ae618c4cb1d21d4254f576e151900.js": "/2nd60thscouts/precache-manifest.b58ae618c4cb1d21d4254f576e151900.js",
+    "precache-manifest.9cd767316fbec1f035092f30bda0038e.js": "/2nd60thscouts/precache-manifest.9cd767316fbec1f035092f30bda0038e.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.2c9ffa50.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js.LICENSE.txt",
+    "static/js/2.680c0c9f.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.680c0c9f.chunk.js.LICENSE.txt",
     "static/media/beavers-and-leader.jpg": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg",
+    "static/media/beavers.png": "/2nd60thscouts/static/media/beavers.8ef39721.png",
     "static/media/canoes.jpg": "/2nd60thscouts/static/media/canoes.7b3594aa.jpg",
     "static/media/cub-high-ropes.jpg": "/2nd60thscouts/static/media/cub-high-ropes.0836c174.jpg",
     "static/media/cubs-marshmallow.jpg": "/2nd60thscouts/static/media/cubs-marshmallow.a387f019.jpg",
     "static/media/explorer-expedition.jpg": "/2nd60thscouts/static/media/explorer-expedition.7e385dd5.jpg",
     "static/media/explorer-obstacle-course.jpg": "/2nd60thscouts/static/media/explorer-obstacle-course.6e609785.jpg",
+    "static/media/explorers.png": "/2nd60thscouts/static/media/explorers.79a336f0.png",
     "static/media/logo-v.svg": "/2nd60thscouts/static/media/logo-v.20b01733.svg",
     "static/media/logo.svg": "/2nd60thscouts/static/media/logo.ba80e1f7.svg",
-    "static/media/scouts-life-jackets.jpg": "/2nd60thscouts/static/media/scouts-life-jackets.83ac1664.jpg"
+    "static/media/scouts-life-jackets.jpg": "/2nd60thscouts/static/media/scouts-life-jackets.83ac1664.jpg",
+    "static/media/scouts.png": "/2nd60thscouts/static/media/scouts.e64e0482.png"
   },
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
-    "static/js/2.2c9ffa50.chunk.js",
+    "static/js/2.680c0c9f.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.974cb8ba.chunk.js"
+    "static/js/main.cde8656c.chunk.js"
   ]
 }

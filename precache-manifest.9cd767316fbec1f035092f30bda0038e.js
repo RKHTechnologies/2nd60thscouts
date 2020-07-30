@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9eae27f105821c11ddcb9782bd3c5419",
+    "revision": "22ce775943868bc16539193374380ace",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "150833f17c57ed5b69ac",
+    "revision": "e0334725b68c055b19b9",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "e5e44e6dacdb527c2ede",
-    "url": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js"
+    "revision": "a94a5532c3b7d438534b",
+    "url": "/2nd60thscouts/static/js/2.680c0c9f.chunk.js"
   },
   {
     "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
-    "url": "/2nd60thscouts/static/js/2.2c9ffa50.chunk.js.LICENSE.txt"
+    "url": "/2nd60thscouts/static/js/2.680c0c9f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "150833f17c57ed5b69ac",
-    "url": "/2nd60thscouts/static/js/main.974cb8ba.chunk.js"
+    "revision": "e0334725b68c055b19b9",
+    "url": "/2nd60thscouts/static/js/main.cde8656c.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "18bcf9c30c85f0a046eb43b18aea046e",
     "url": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg"
+  },
+  {
+    "revision": "8ef3972105b88eab7683b23a289c0844",
+    "url": "/2nd60thscouts/static/media/beavers.8ef39721.png"
   },
   {
     "revision": "7b3594aacf63bf4b6ec5953d70348c24",
@@ -48,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2nd60thscouts/static/media/explorer-obstacle-course.6e609785.jpg"
   },
   {
+    "revision": "79a336f083ed0738480f8a26d92bd763",
+    "url": "/2nd60thscouts/static/media/explorers.79a336f0.png"
+  },
+  {
     "revision": "20b0173379a4fc18755b63643942478b",
     "url": "/2nd60thscouts/static/media/logo-v.20b01733.svg"
   },
@@ -58,5 +66,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "83ac1664a3f8c62b43fc0f7518551acd",
     "url": "/2nd60thscouts/static/media/scouts-life-jackets.83ac1664.jpg"
+  },
+  {
+    "revision": "e64e0482ab47641ca114d3ac0e1aeff8",
+    "url": "/2nd60thscouts/static/media/scouts.e64e0482.png"
   }
 ]);
