@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import Hero from './Hero';
+import Hero from '../Shared/Hero';
 
 const HomeContainer = styled.div`
   position: absolute;
@@ -14,7 +14,7 @@ const HomeContainer = styled.div`
 const About: FC = () => {
     return (
       <HomeContainer>
-        <Hero image="obstacle" small />
+        <Hero image="obstacle" />
       </HomeContainer>
     );
 }
