@@ -1,27 +1,31 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.91ddae4a.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.91ddae4a.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.1c1a6c73.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.1c1a6c73.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
-    "static/js/2.4d03fa4b.chunk.js": "/2nd60thscouts/static/js/2.4d03fa4b.chunk.js",
-    "static/js/2.4d03fa4b.chunk.js.map": "/2nd60thscouts/static/js/2.4d03fa4b.chunk.js.map",
+    "static/js/2.34db2a15.chunk.js": "/2nd60thscouts/static/js/2.34db2a15.chunk.js",
+    "static/js/2.34db2a15.chunk.js.map": "/2nd60thscouts/static/js/2.34db2a15.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.cf9d8ad2efc1da796cdf71ed54a7568d.js": "/2nd60thscouts/precache-manifest.cf9d8ad2efc1da796cdf71ed54a7568d.js",
+    "precache-manifest.17b9a72f9cb79fa2c963f9f8b34580bb.js": "/2nd60thscouts/precache-manifest.17b9a72f9cb79fa2c963f9f8b34580bb.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.4d03fa4b.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.4d03fa4b.chunk.js.LICENSE.txt",
+    "static/js/2.34db2a15.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.34db2a15.chunk.js.LICENSE.txt",
+    "static/media/beavers-and-leader.jpg": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg",
     "static/media/canoes.jpg": "/2nd60thscouts/static/media/canoes.7b3594aa.jpg",
     "static/media/cub-high-ropes.jpg": "/2nd60thscouts/static/media/cub-high-ropes.0836c174.jpg",
+    "static/media/cubs-marshmallow.jpg": "/2nd60thscouts/static/media/cubs-marshmallow.a387f019.jpg",
     "static/media/explorer-expedition.jpg": "/2nd60thscouts/static/media/explorer-expedition.7e385dd5.jpg",
+    "static/media/explorer-obstacle-course.jpg": "/2nd60thscouts/static/media/explorer-obstacle-course.6e609785.jpg",
     "static/media/logo-v.svg": "/2nd60thscouts/static/media/logo-v.20b01733.svg",
-    "static/media/logo.svg": "/2nd60thscouts/static/media/logo.ba80e1f7.svg"
+    "static/media/logo.svg": "/2nd60thscouts/static/media/logo.ba80e1f7.svg",
+    "static/media/scouts-in-a-row.jpg": "/2nd60thscouts/static/media/scouts-in-a-row.cf4ba15c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
-    "static/js/2.4d03fa4b.chunk.js",
+    "static/js/2.34db2a15.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.91ddae4a.chunk.js"
+    "static/js/main.1c1a6c73.chunk.js"
   ]
 }
