@@ -4,7 +4,7 @@ import Hero from '../Shared/Hero';
 import { useMediaQuery } from 'react-responsive';
 import { SharedSettings, colours, PageBodyContainer } from '../Shared/SharedStyles';
 
-const Section = styled.div`
+export const Section = styled.div`
   width: 100%;
   min-height: 200px;
   padding: 10px 30px;
@@ -29,6 +29,10 @@ const WelcomeTitle = styled.h1`
   }
 `;
 
+const WelcomeText = styled.p`
+
+`;
+
 const Home: FC = () => {
     const mobile = useMediaQuery({query: '(max-width: 1400px)'});
 
@@ -40,6 +44,9 @@ const Home: FC = () => {
         <Section>    
           <div className="wrapper">
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
+            <WelcomeText>
+
+            </WelcomeText>
           </div>
         </Section>
       </PageBodyContainer>
