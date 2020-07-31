@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Hero from '../Shared/Hero';
 import { useMediaQuery } from 'react-responsive';
 import { SharedSettings, colours, PageBodyContainer } from '../Shared/SharedStyles';
+import skillsForLife from '../img/skillsForLife.png';
 
 export const Section = styled.div`
   width: 100%;
@@ -15,7 +16,8 @@ export const Section = styled.div`
   div.wrapper {
     width: 96%;
     max-width: ${SharedSettings.maxWidth};
-    margin-left: 50px;
+    display: flex;
+    /* margin-left: 50px; */
   }
 `;
 
@@ -30,7 +32,12 @@ const WelcomeTitle = styled.h1`
 `;
 
 const WelcomeText = styled.p`
+  
+`;
 
+const SkillsVideo = styled.video`
+  width: 80%;
+  margin: auto;
 `;
 
 const Home: FC = () => {
@@ -41,12 +48,22 @@ const Home: FC = () => {
     return (
       <PageBodyContainer>
         <Hero image="highRopes"/>
-        <Section>    
+        
+        <Section id="welcome">    
           <div className="wrapper">
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
             <WelcomeText>
 
             </WelcomeText>
+          </div>
+        </Section>
+
+        <Section id="skillsForLife">
+          <div className="wrapper">
+            <SkillsVideo 
+              poster={skillsForLife} 
+              src={`${process.env.PUBLIC_URL}/skills-for-life.mp4`} 
+              controls />
           </div>
         </Section>
       </PageBodyContainer>

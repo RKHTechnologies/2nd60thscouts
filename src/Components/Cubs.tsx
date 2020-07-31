@@ -10,6 +10,12 @@ interface ILogoProps {
 }
 
 // To do: 650 width
+/* 
+  box with 800 width, say 300 height
+  position exactly calc(80% - 150px)
+  background-image of image
+  background contain
+*/
 
 export const PageLogo = styled.img`
     position: absolute;
