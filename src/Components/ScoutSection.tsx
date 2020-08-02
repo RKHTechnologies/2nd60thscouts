@@ -4,7 +4,7 @@ import { colours } from '../Shared/SharedStyles';
 import beavers from '../img/beavers-singing.jpg';
 import cubs from '../img/cubs-marshmallow.jpg';
 import scouts from '../img/scouts-in-a-row.jpg';
-import explorers from '../img/explorer-teamwork-3.jpg';
+import explorers from '../img/explorers-on-rock.jpg';
 import { useHistory } from 'react-router-dom';
 
 const Container = styled.div`
@@ -15,6 +15,7 @@ const Container = styled.div`
   grid-template-areas: 'beavers cubs scouts explorers';
 
   @media(max-width: 1100px) {
+    grid-gap: 10px;
     grid-template-areas: 
       'beavers beavers cubs cubs'
       'scouts scouts explorers explorers';
@@ -36,6 +37,11 @@ const SectionBox = styled.div`
   font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
+
+  @media(max-width: 1100px) {
+    height: 250px;
+    font-size: 2em;
+  }
 
   &:before {
     content: '';
@@ -82,7 +88,7 @@ const Cubs = styled(SectionBox)`
     content: 'Cubs';
     background: ${colours.Green};
   }
-  &:after { content: '8 - 10 yrs'; }
+  &:after { content: '8 - 10 ½ yrs'; }
 `;
 
 const Scouts = styled(SectionBox)`
@@ -93,7 +99,7 @@ const Scouts = styled(SectionBox)`
     content: 'Scouts';
     background: ${colours.Purple};
   }
-  &:after { content: '10 - 14 yrs'; }
+  &:after { content: '10 ½ - 14 yrs'; }
 `;
 
 const Explorers = styled(SectionBox)`

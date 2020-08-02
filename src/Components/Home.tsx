@@ -77,7 +77,7 @@ const GroupImage = styled.div`
   background-image: url(${groupImage});
   background-size: cover;
   background-position: center;
-  min-height: 400px;
+  min-height: 200px;
   
   @media(max-width: 1350px) { margin: 10px }
   @media(max-width: ${mobile}) { margin: 0 -2%;  }
@@ -104,7 +104,33 @@ const FindOutMore = styled.button`
   }
 `;
 
+const CalendarLink = styled.div`
+  width: 100%;
+  height: 100px;
+  border: 1px solid ${colours.Teal};
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 2em;
+  color: ${colours.Purple};
+  cursor: pointer;
 
+  span {
+    margin-left: 20px;
+    font-weight: 200;
+    color: ${colours.Teal};
+  }
+
+  &:hover {
+    background: ${colours.Teal};
+    color: #fff;
+
+    span {color: #fff}
+  }
+`;
 
 const SkillsVideo = styled.video`
   width: 80%;
@@ -139,6 +165,14 @@ const Home: FC = () => {
       <Section id="sections">
         <div className="wrapper">
           <ScoutSection />
+        </div>
+      </Section>
+
+      <Section id="calendar">
+        <div className="wrapper">
+          <CalendarLink>
+            What's on?<span> Click to view Our Calendar</span>
+          </CalendarLink>
         </div>
       </Section>
 
