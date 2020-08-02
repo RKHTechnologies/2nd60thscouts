@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e5846cbc49f4884f52e541f3d4801ee",
+    "revision": "03246718f0b1478d8d47e487659ed099",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "bbfdbea2d20d03ba6b12",
+    "revision": "0978d9bdae3d614a3519",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "1410f8aaab05c3dfc87c",
-    "url": "/2nd60thscouts/static/js/2.b9b59fda.chunk.js"
+    "revision": "04803264e62ed2f3278c",
+    "url": "/2nd60thscouts/static/js/2.37e1d646.chunk.js"
   },
   {
     "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
-    "url": "/2nd60thscouts/static/js/2.b9b59fda.chunk.js.LICENSE.txt"
+    "url": "/2nd60thscouts/static/js/2.37e1d646.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bbfdbea2d20d03ba6b12",
-    "url": "/2nd60thscouts/static/js/main.5921cb16.chunk.js"
+    "revision": "0978d9bdae3d614a3519",
+    "url": "/2nd60thscouts/static/js/main.844d1e18.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
     "url": "/2nd60thscouts/static/js/runtime-main.068863df.js"
+  },
+  {
+    "revision": "12ef0ab969fbc27af6398c94cba85307",
+    "url": "/2nd60thscouts/static/media/Badge_Placement_Beavers.12ef0ab9.jpeg"
   },
   {
     "revision": "18bcf9c30c85f0a046eb43b18aea046e",
