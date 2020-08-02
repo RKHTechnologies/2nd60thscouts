@@ -5,7 +5,7 @@ import { PageBodyContainer } from '../Shared/SharedStyles';
 const About: FC = () => {
     return (
       <PageBodyContainer>
-        <Hero image="obstacle" />
+        <Hero image="kayaking" />
       </PageBodyContainer>
     );
 }

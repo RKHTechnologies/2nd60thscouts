@@ -6,6 +6,7 @@ import { SharedSettings, colours, PageBodyContainer } from '../Shared/SharedStyl
 import skillsForLife from '../img/skillsForLife.png';
 import groupImage from '../img/group-of-scouts-in-helmets.jpg';
 import { useHistory } from 'react-router-dom';
+import ScoutSection from './ScoutSection';
 
 const mobile = "1100px";
 
@@ -76,7 +77,7 @@ const GroupImage = styled.div`
   background-image: url(${groupImage});
   background-size: cover;
   background-position: center;
-  min-height: 500px;
+  min-height: 400px;
   
   @media(max-width: 1350px) { margin: 10px }
   @media(max-width: ${mobile}) { margin: 0 -2%;  }
@@ -135,12 +136,24 @@ const Home: FC = () => {
         </div>
       </Section>
 
+      <Section id="sections">
+        <div className="wrapper">
+          <ScoutSection />
+        </div>
+      </Section>
+
       <Section id="skillsForLife">
         <div className="wrapper">
           <SkillsVideo 
             poster={skillsForLife} 
             src={`${process.env.PUBLIC_URL}/skills-for-life.mp4`} 
             controls />
+        </div>
+      </Section>
+
+      <Section id="Join Us">
+        <div className="wrapper">
+          Join us
         </div>
       </Section>
     </PageBodyContainer>
