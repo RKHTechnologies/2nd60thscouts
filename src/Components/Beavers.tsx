@@ -35,7 +35,7 @@ export const PageLogo = styled.img`
     }    
 `;
 
-const BadgeLayout = styled.img`
+export const BadgeLayout = styled.img`
   margin: auto;
   width: 100%;
   max-width: 800px;
@@ -53,8 +53,8 @@ const Beavers: FC = () => {
         </Section>
 
         <Section id="uniform">
-        <div className="wrapper">
-          <BadgeLayout src={badges} />
+          <div className="wrapper">
+            <BadgeLayout src={badges} />
         </div>
       </Section>
       </PageBodyContainer>
