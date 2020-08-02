@@ -4,6 +4,7 @@ import Hero from '../Shared/Hero';
 import { PageBodyContainer } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import beavers from '../img/beavers.png';
+import badges from '../img/Badge_Placement_Beavers.jpeg';
 
 interface ILogoProps {
   top: number
@@ -34,6 +35,12 @@ export const PageLogo = styled.img`
     }    
 `;
 
+const BadgeLayout = styled.img`
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+`;
+
 const Beavers: FC = () => {
     return (
       <PageBodyContainer>
@@ -44,6 +51,12 @@ const Beavers: FC = () => {
 
           </div>
         </Section>
+
+        <Section id="uniform">
+        <div className="wrapper">
+          <BadgeLayout src={badges} />
+        </div>
+      </Section>
       </PageBodyContainer>
     );
 }
