@@ -8,6 +8,7 @@ import groupImage from '../img/group-of-scouts-in-helmets.jpg';
 import { useHistory } from 'react-router-dom';
 import ScoutSection from './ScoutSection';
 import calendarIcon from '../img/Calendar.svg';
+import leaders from '../img/leaders_on_poachers.jpg';
 
 const mobile = "1100px";
 
@@ -160,12 +161,74 @@ const CalendarLink = styled.div`
 
 
 const SkillsVideo = styled.video`
+  width: 100%;
+  margin: auto;
+`;
+
+const AdultVolunteering = styled.div`
   width: 80%;
   margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'side image image'
+    'side image image'
+    'side image image';
 
-  @media(max-width: ${mobile}){
-    width: 100%;
+  h3 {
+      grid-area: title;
+      font-size: 3em;
+      margin: 20px 0;
   }
+  p {
+    grid-area: text;
+    font-weight: 400;
+  }
+`;
+
+const VolunteeringContainer = styled.div`
+  grid-area: side;
+  background: ${colours.Blue};
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 40px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 22px solid ${colours.Blue};
+    right: -22px;
+    top: calc(50% - 22px);
+  }
+`;
+
+const JoinUs = styled.button`
+  grid-area: joinUs;
+  padding: 14px 35px;
+  margin-top: 20px;
+  border: 0;
+  background: #fff;
+  color: ${colours.Blue};
+  font-size: 1.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: ${colours.Yellow};
+  }
+`;
+
+const LeadersImage = styled.div`
+  grid-area: image;
+  background: url(${leaders});
+  background-size: cover;
+  height: 500px;
 `;
 
 const Home: FC = () => {
@@ -183,7 +246,7 @@ const Home: FC = () => {
           <WelcomeContainer>
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
             <WelcomeText>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
+              Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
               <br /><br />
               Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei.
             </WelcomeText>
@@ -216,7 +279,20 @@ const Home: FC = () => {
         </div>
       </Section>
 
-      <Section id="Join Us">
+      <Section id="adultVolunteering">
+        <div className="wrapper">
+          <AdultVolunteering>
+            <VolunteeringContainer>
+              <h3>Adult Volunteering</h3>
+              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eoscu eum an brute copiosae hendrerit. Eos erant dolorum an.</p>
+              <JoinUs onClick={() => history.push(`${process.env.PUBLIC_URL}#joinUs`)}>Join Us</JoinUs>
+            </VolunteeringContainer>
+            <LeadersImage />
+          </AdultVolunteering>
+        </div>
+      </Section>
+
+      <Section id="joinUs">
         <div className="wrapper">
           Join us
         </div>
