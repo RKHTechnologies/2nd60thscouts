@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.16a8af46.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.16a8af46.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.bca49314.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.bca49314.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
-    "static/js/2.160611bd.chunk.js": "/2nd60thscouts/static/js/2.160611bd.chunk.js",
-    "static/js/2.160611bd.chunk.js.map": "/2nd60thscouts/static/js/2.160611bd.chunk.js.map",
+    "static/js/2.205bfdf1.chunk.js": "/2nd60thscouts/static/js/2.205bfdf1.chunk.js",
+    "static/js/2.205bfdf1.chunk.js.map": "/2nd60thscouts/static/js/2.205bfdf1.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.94534ceb0a707c230752f84f691a6c5c.js": "/2nd60thscouts/precache-manifest.94534ceb0a707c230752f84f691a6c5c.js",
+    "precache-manifest.5a46d79bdf341e5d621a0a2a0ba07ee6.js": "/2nd60thscouts/precache-manifest.5a46d79bdf341e5d621a0a2a0ba07ee6.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.160611bd.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.160611bd.chunk.js.LICENSE.txt",
+    "static/js/2.205bfdf1.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.205bfdf1.chunk.js.LICENSE.txt",
     "static/media/Badge_Placement_Beavers.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Beavers.12ef0ab9.jpeg",
     "static/media/Calendar.svg": "/2nd60thscouts/static/media/Calendar.8e124a09.svg",
     "static/media/beavers-and-leader.jpg": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg",
@@ -27,6 +27,7 @@
     "static/media/explorers.png": "/2nd60thscouts/static/media/explorers.79a336f0.png",
     "static/media/group-of-scouts-in-helmets.jpg": "/2nd60thscouts/static/media/group-of-scouts-in-helmets.21ca0aab.jpg",
     "static/media/kayaking.jpg": "/2nd60thscouts/static/media/kayaking.3d0fc355.jpg",
+    "static/media/leaders_on_poachers.jpg": "/2nd60thscouts/static/media/leaders_on_poachers.d998a92e.jpg",
     "static/media/logo-v.svg": "/2nd60thscouts/static/media/logo-v.20b01733.svg",
     "static/media/logo.svg": "/2nd60thscouts/static/media/logo.ba80e1f7.svg",
     "static/media/scouts-in-a-row.jpg": "/2nd60thscouts/static/media/scouts-in-a-row.cf4ba15c.jpg",
@@ -36,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
-    "static/js/2.160611bd.chunk.js",
+    "static/js/2.205bfdf1.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.16a8af46.chunk.js"
+    "static/js/main.bca49314.chunk.js"
   ]
 }
