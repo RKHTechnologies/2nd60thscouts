@@ -7,6 +7,7 @@ import skillsForLife from '../img/skillsForLife.png';
 import groupImage from '../img/group-of-scouts-in-helmets.jpg';
 import { useHistory } from 'react-router-dom';
 import ScoutSection from './ScoutSection';
+import calendarIcon from '../img/Calendar.svg';
 
 const mobile = "1100px";
 
@@ -104,6 +105,21 @@ const FindOutMore = styled.button`
   }
 `;
 
+
+const CalendarIcon = styled.div`
+  /* width: 90px;
+  height: 77px;
+  margin-left: 20px; */
+  width: 75px;
+  height: 65px;
+  margin-left: 25px;
+  
+  background-color: ${colours.Teal};  
+  background-size: contain;
+  mask: url(${calendarIcon});
+  mask-size: contain;
+`;
+
 const CalendarLink = styled.div`
   width: 100%;
   height: 100px;
@@ -128,7 +144,11 @@ const CalendarLink = styled.div`
     background: ${colours.Teal};
     color: #fff;
 
-    span {color: #fff}
+    span {color: #fff;}
+
+    ${CalendarIcon} {
+      background: #fff;
+    }
   }
 
   @media(max-width: 700px) {
@@ -137,6 +157,7 @@ const CalendarLink = styled.div`
     & > span { margin: 0; }
   }
 `;
+
 
 const SkillsVideo = styled.video`
   width: 80%;
@@ -177,7 +198,7 @@ const Home: FC = () => {
       <Section id="calendar">
         <div className="wrapper">
           <CalendarLink onClick={() => history.push(`${process.env.PUBLIC_URL}/ourCalendar`)}>
-            What's on?<span> Click to view Our Calendar</span>
+            What's on?<span> Click to view Our Calendar</span><CalendarIcon />
           </CalendarLink>
         </div>
       </Section>
