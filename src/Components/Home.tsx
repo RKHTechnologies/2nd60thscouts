@@ -130,6 +130,12 @@ const CalendarLink = styled.div`
 
     span {color: #fff}
   }
+
+  @media(max-width: 700px) {
+    flex-direction: column;
+    font-size: 1.4em;
+    & > span { margin: 0; }
+  }
 `;
 
 const SkillsVideo = styled.video`
@@ -170,7 +176,7 @@ const Home: FC = () => {
 
       <Section id="calendar">
         <div className="wrapper">
-          <CalendarLink>
+          <CalendarLink onClick={() => history.push(`${process.env.PUBLIC_URL}/ourCalendar`)}>
             What's on?<span> Click to view Our Calendar</span>
           </CalendarLink>
         </div>

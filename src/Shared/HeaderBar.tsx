@@ -38,6 +38,10 @@ const HeaderNavContainer = styled.div`
     & > img {
         height: 68px;
         margin-left: 50px;
+
+        @media(max-width: 350px) {
+            margin-left: 10px;
+        }
     }
 
     @media(min-width: ${SharedSettings.maxWidth}) {
@@ -98,11 +102,17 @@ const NavItemsRightContainer = styled.div`
             color: ${colours.light};
             text-align: center;
             font-size: 1.4em;
+            padding: 0 14px;
 
             &:last-child {
                 margin-right: 0;
             }
         }
+    }
+
+    @media( max-width: 350px) {
+        left: 5px;
+        right: 5px;
     }
 `;
 
@@ -156,6 +166,9 @@ const BurgerContainer = styled.div`
     @media( max-width: 1100px ) {
         display: initial;
 
+    }
+    @media( max-width: 350px ) {
+        right: 5px;
     }
 `;
 
