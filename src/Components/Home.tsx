@@ -28,7 +28,7 @@ export const Section = styled.div`
   }
 
   @media(max-width: ${mobile}) {
-    padding: 20px 0 100px;
+    padding: 20px 0 50px;
   }
 `;
 
@@ -107,13 +107,9 @@ const FindOutMore = styled.button`
 
 
 const CalendarIcon = styled.div`
-  /* width: 90px;
-  height: 77px;
-  margin-left: 20px; */
   width: 75px;
   height: 65px;
   margin-left: 25px;
-  
   background-color: ${colours.Teal};  
   background-size: contain;
   mask: url(${calendarIcon});
@@ -151,10 +147,14 @@ const CalendarLink = styled.div`
     }
   }
 
-  @media(max-width: 700px) {
+  @media(max-width: 750px) {
     flex-direction: column;
     font-size: 1.4em;
     & > span { margin: 0; }
+
+    ${CalendarIcon} {
+      display: none;
+    }
   }
 `;
 
@@ -162,6 +162,10 @@ const CalendarLink = styled.div`
 const SkillsVideo = styled.video`
   width: 80%;
   margin: auto;
+
+  @media(max-width: ${mobile}){
+    width: 100%;
+  }
 `;
 
 const Home: FC = () => {
