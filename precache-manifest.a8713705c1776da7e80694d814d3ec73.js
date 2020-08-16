@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5aea13b188f75ba8066d809b0778f83e",
+    "revision": "4a98f536d37d04f43a0411f52d71af93",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "68aed9e3e17fd885b5e8",
+    "revision": "711d5a5fbedbf108daf0",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "0220854a3e324ccdfef3",
-    "url": "/2nd60thscouts/static/js/2.205bfdf1.chunk.js"
+    "revision": "d2c5bc9b403272ebc265",
+    "url": "/2nd60thscouts/static/js/2.cee84766.chunk.js"
   },
   {
     "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
-    "url": "/2nd60thscouts/static/js/2.205bfdf1.chunk.js.LICENSE.txt"
+    "url": "/2nd60thscouts/static/js/2.cee84766.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "68aed9e3e17fd885b5e8",
-    "url": "/2nd60thscouts/static/js/main.bca49314.chunk.js"
+    "revision": "711d5a5fbedbf108daf0",
+    "url": "/2nd60thscouts/static/js/main.48f91860.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
@@ -52,6 +52,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2nd60thscouts/static/media/cub-high-ropes.0836c174.jpg"
   },
   {
+    "revision": "c0c4e34610628257b6daf1c2b1b76785",
+    "url": "/2nd60thscouts/static/media/cub-high-ropes.c0c4e346.jpg"
+  },
+  {
     "revision": "98fd05395fdd4c31d89c2b414883b073",
     "url": "/2nd60thscouts/static/media/cubs-group.98fd0539.jpg"
   },
@@ -62,6 +66,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7e385dd5d21f5fe4854d9360417b32fe",
     "url": "/2nd60thscouts/static/media/explorer-expedition.7e385dd5.jpg"
+  },
+  {
+    "revision": "da24e27e5b7d6c63b1de81cc3bdb112b",
+    "url": "/2nd60thscouts/static/media/explorer-expedition.da24e27e.jpg"
   },
   {
     "revision": "cf2a4ecdb7edcf2482dcb1cfd2ecc8f6",
@@ -82,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3d0fc3554c13927fb85b4efb40591f7d",
     "url": "/2nd60thscouts/static/media/kayaking.3d0fc355.jpg"
+  },
+  {
+    "revision": "d2f7118fa6a718c41f0927b7b74a3aa1",
+    "url": "/2nd60thscouts/static/media/kayaking.d2f7118f.jpg"
   },
   {
     "revision": "d998a92e6fe6ea4e8a7fa4ac30ea7357",
