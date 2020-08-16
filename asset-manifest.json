@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.48f91860.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.48f91860.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.22f97954.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.22f97954.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
-    "static/js/2.cee84766.chunk.js": "/2nd60thscouts/static/js/2.cee84766.chunk.js",
-    "static/js/2.cee84766.chunk.js.map": "/2nd60thscouts/static/js/2.cee84766.chunk.js.map",
+    "static/js/2.f1b405a7.chunk.js": "/2nd60thscouts/static/js/2.f1b405a7.chunk.js",
+    "static/js/2.f1b405a7.chunk.js.map": "/2nd60thscouts/static/js/2.f1b405a7.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.a8713705c1776da7e80694d814d3ec73.js": "/2nd60thscouts/precache-manifest.a8713705c1776da7e80694d814d3ec73.js",
+    "precache-manifest.0c3bd5e95482e742a2a3aafb24b09c07.js": "/2nd60thscouts/precache-manifest.0c3bd5e95482e742a2a3aafb24b09c07.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.cee84766.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.cee84766.chunk.js.LICENSE.txt",
+    "static/js/2.f1b405a7.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.f1b405a7.chunk.js.LICENSE.txt",
+    "static/media/1.png": "/2nd60thscouts/static/media/1.2e404822.png",
     "static/media/Badge_Placement_Beavers.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Beavers.12ef0ab9.jpeg",
     "static/media/Calendar.svg": "/2nd60thscouts/static/media/Calendar.8e124a09.svg",
+    "static/media/FDL_Blue.png": "/2nd60thscouts/static/media/FDL_Blue.b37962cb.png",
+    "static/media/JessicaHoward.jpg": "/2nd60thscouts/static/media/JessicaHoward.244ee1d9.jpg",
     "static/media/beavers-and-leader.jpg": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg",
+    "static/media/beavers-characters.png": "/2nd60thscouts/static/media/beavers-characters.0d483ffc.png",
     "static/media/beavers-singing.jpg": "/2nd60thscouts/static/media/beavers-singing.a2153e19.jpg",
     "static/media/beavers.png": "/2nd60thscouts/static/media/beavers.8ef39721.png",
     "static/media/canoes.jpg": "/2nd60thscouts/static/media/canoes.7b3594aa.jpg",
@@ -37,8 +41,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
-    "static/js/2.cee84766.chunk.js",
+    "static/js/2.f1b405a7.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.48f91860.chunk.js"
+    "static/js/main.22f97954.chunk.js"
   ]
 }

@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a98f536d37d04f43a0411f52d71af93",
+    "revision": "8bc99861c2f8da44e931e36f10760155",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "711d5a5fbedbf108daf0",
+    "revision": "59911842a81bdbac51da",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "d2c5bc9b403272ebc265",
-    "url": "/2nd60thscouts/static/js/2.cee84766.chunk.js"
+    "revision": "5f1250a05f4f629d44aa",
+    "url": "/2nd60thscouts/static/js/2.f1b405a7.chunk.js"
   },
   {
     "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
-    "url": "/2nd60thscouts/static/js/2.cee84766.chunk.js.LICENSE.txt"
+    "url": "/2nd60thscouts/static/js/2.f1b405a7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "711d5a5fbedbf108daf0",
-    "url": "/2nd60thscouts/static/js/main.48f91860.chunk.js"
+    "revision": "59911842a81bdbac51da",
+    "url": "/2nd60thscouts/static/js/main.22f97954.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
     "url": "/2nd60thscouts/static/js/runtime-main.068863df.js"
+  },
+  {
+    "revision": "2e404822062ceec024dddb966c25e82a",
+    "url": "/2nd60thscouts/static/media/1.2e404822.png"
   },
   {
     "revision": "12ef0ab969fbc27af6398c94cba85307",
@@ -32,8 +36,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2nd60thscouts/static/media/Calendar.8e124a09.svg"
   },
   {
+    "revision": "b37962cbcbf0c5adcb26d531cc3f26b5",
+    "url": "/2nd60thscouts/static/media/FDL_Blue.b37962cb.png"
+  },
+  {
+    "revision": "244ee1d95f0105c7faae13e205d30610",
+    "url": "/2nd60thscouts/static/media/JessicaHoward.244ee1d9.jpg"
+  },
+  {
     "revision": "18bcf9c30c85f0a046eb43b18aea046e",
     "url": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg"
+  },
+  {
+    "revision": "0d483ffc2bf86fe17081aff5f14fbe98",
+    "url": "/2nd60thscouts/static/media/beavers-characters.0d483ffc.png"
   },
   {
     "revision": "a2153e192117e3c11605c7948ee8b9cf",
