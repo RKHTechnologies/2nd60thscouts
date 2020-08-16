@@ -1,17 +1,17 @@
 import React from 'react';
-import Home from './Components/Home';
 import GlobalStyle from './Shared/GlobalStyle';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Error404 from './Shared/Error404';
 import HeaderBar from './Shared/HeaderBar';
-import About from './Components/About';
-import Beavers from './Components/Beavers';
-import Cubs from './Components/Cubs';
-import Scouts from './Components/Scouts';
-import Explorers from './Components/Explorers';
-import OurCalendar from './Components/OurCalendar';
-import Join from './Components/Join';
-import Documents from './Components/Documents';
+import Home from './pages/Home';
+import About from './pages/About';
+import Beavers from './pages/Beavers';
+import Cubs from './pages/Cubs';
+import Scouts from './pages/Scouts';
+import Explorers from './pages/Explorers';
+import OurCalendar from './pages/OurCalendar';
+import JoinUs from './pages/JoinUs';
+import Documents from './pages/Documents';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/scouts`} component={Scouts} />
           <Route exact path={`${process.env.PUBLIC_URL}/explorers`} component={Explorers} />
           <Route exact path={`${process.env.PUBLIC_URL}/ourCalendar`} component={OurCalendar} />
-          <Route exact path={`${process.env.PUBLIC_URL}/joinUs`} component={Join} />
+          <Route exact path={`${process.env.PUBLIC_URL}/joinUs`} component={JoinUs} />
           <Route exact path={`${process.env.PUBLIC_URL}/documents`} component={Documents} />
           <Route component={Error404} />
         </Switch>

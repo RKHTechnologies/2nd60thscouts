@@ -9,6 +9,8 @@ import beavers from '../img/beavers-and-leader.jpg';
 import cubs from '../img/cubs-group.jpg';
 import scouts from '../img/scouts-life-jackets.jpg';
 import kayaking from '../img/kayaking.jpg';
+import { imageLib, ImagesDesktop } from './ImageLib';
+import { useMediaQuery } from 'react-responsive';
 
 const images = {
     'highRopes': highRopes,
@@ -41,14 +43,16 @@ const HeroBanner = styled.div`
 
 
 interface IProps {
-    image: 'highRopes' | 'canoes' | 'expedition' | 'obstacle' | 'beavers' | 'cubs' | 'scouts' | 'kayaking';
+    image: imageLib;
     small?: boolean;
     imageHeight?: string;
 }
 
 const Hero: FC<IProps> = ({image, small, imageHeight}: IProps) => {
+    const mobile = useMediaQuery({query: '(max-width: 1400px)'});
+    
     return (
-        <HeroBanner imageUrl={images[image]} small={small} imageHeight={imageHeight} />
+        <HeroBanner imageUrl={mobile ? ImagesDesktop[image] : ImagesDesktop[image]} small={small} imageHeight={imageHeight} />
     );
 }
 
