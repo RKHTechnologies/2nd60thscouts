@@ -45,11 +45,13 @@ export const colours: ColoursProps = {
 interface SettingsProps {
     maxWidth: string;
     maxWidthHalf: string;
+    mobile: string;
 }
 
 export const SharedSettings: SettingsProps = {
     maxWidth: "1400px",
     maxWidthHalf: "700px",
+    mobile: "1100px",
 }
 
 export const PageContainer = styled.div`

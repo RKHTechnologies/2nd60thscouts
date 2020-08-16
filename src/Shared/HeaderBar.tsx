@@ -21,6 +21,7 @@ const HeaderNav = styled.div`
     justify-content: center;
     align-items: center;
     background: ${colours.light};
+    z-index: 1;
 `;
 
 const HeaderNavContainer = styled.div` 

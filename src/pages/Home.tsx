@@ -12,10 +12,16 @@ import leaders from '../img/leaders_on_poachers.jpg';
 
 const mobile = "1100px";
 
+interface SectionProps {
+  fullwidth?: boolean;
+  lastItem?: boolean;
+}
+
 export const Section = styled.div`
   width: 100%;
   min-height: 200px;
-  padding: 20px 30px 100px;
+  padding: ${(p: SectionProps) => p.fullwidth ? "20px 0 100px" : "20px 30px 100px"};
+  padding-bottom: ${(p: SectionProps) => p.lastItem ? "0 !important" : null};
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -23,7 +29,6 @@ export const Section = styled.div`
   div.wrapper {
     width: 96%;
     max-width: ${SharedSettings.maxWidth};
-    /* margin-left: 50px; */
     display: flex;
     flex-wrap: wrap;
   }
@@ -292,10 +297,8 @@ const Home: FC = () => {
         </div>
       </Section>
 
-      <Section id="joinUs">
-        <div className="wrapper">
-          Join us
-        </div>
+      <Section id="joinUs" fullwidth lastItem>
+        
       </Section>
     </PageBodyContainer>
   );
