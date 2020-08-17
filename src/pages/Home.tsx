@@ -9,6 +9,7 @@ import { useHistory } from 'react-router-dom';
 import ScoutSection from '../Components/ScoutSection';
 import calendarIcon from '../img/Calendar.svg';
 import leaders from '../img/leaders_on_poachers.jpg';
+import JumboCard from '../Shared/JumboCard';
 
 const mobile = "1100px";
 
@@ -164,76 +165,9 @@ const CalendarLink = styled.div`
   }
 `;
 
-
 const SkillsVideo = styled.video`
   width: 100%;
   margin: auto;
-`;
-
-const AdultVolunteering = styled.div`
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    'side image image'
-    'side image image'
-    'side image image';
-
-  h3 {
-      grid-area: title;
-      font-size: 3em;
-      margin: 20px 0;
-  }
-  p {
-    grid-area: text;
-    font-weight: 400;
-  }
-`;
-
-const VolunteeringContainer = styled.div`
-  grid-area: side;
-  background: ${colours.Blue};
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: baseline;
-  padding: 40px;
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
-    border-left: 22px solid ${colours.Blue};
-    right: -22px;
-    top: calc(50% - 22px);
-  }
-`;
-
-const JoinUs = styled.button`
-  grid-area: joinUs;
-  padding: 14px 35px;
-  margin-top: 20px;
-  border: 0;
-  background: #fff;
-  color: ${colours.Blue};
-  font-size: 1.05em;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: ${colours.Yellow};
-  }
-`;
-
-const LeadersImage = styled.div`
-  grid-area: image;
-  background: url(${leaders});
-  background-size: cover;
-  height: 500px;
 `;
 
 const Home: FC = () => {
@@ -286,14 +220,14 @@ const Home: FC = () => {
 
       <Section id="adultVolunteering">
         <div className="wrapper">
-          <AdultVolunteering>
-            <VolunteeringContainer>
-              <h3>Adult Volunteering</h3>
-              <p>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eoscu eum an brute copiosae hendrerit. Eos erant dolorum an.</p>
-              <JoinUs onClick={() => history.push(`${process.env.PUBLIC_URL}/joinUs`)}>Join Us</JoinUs>
-            </VolunteeringContainer>
-            <LeadersImage />
-          </AdultVolunteering>
+          <JumboCard 
+            title="Adult Volunteering" 
+            text="Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eoscu eum an brute copiosae hendrerit. Eos erant dolorum an."
+            buttonText="Join Us"
+            link="/joinUs"
+            image="leaders"
+            colour="Blue"
+          />
         </div>
       </Section>
 
