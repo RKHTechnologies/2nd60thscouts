@@ -16,8 +16,13 @@ import scoutsHero from '../img/scouts-life-jackets.jpg';
 import jessica from '../img/desktop/JessicaHoward.jpg';
 
 // Beavers Characters
-import character1 from '../img/desktop/1.png';
 import characters from '../img/desktop/beavers-characters.png';
+
+// Fluer De Lis
+import FDL_Blue from '../img/FDL_Blue.png';
+import FDL_Green from '../img/FDL_Green.png';
+import FDL_Purple from '../img/FDL_Purple.png';
+import FDL_Red from '../img/FDL_Red.png';
 
 
 
@@ -36,8 +41,12 @@ export const ImagesDesktop = {
 
   'jessica': jessica,
 
-  'character1': character1,
   'characters': characters,
+  
+  'FDL_Blue': FDL_Blue,
+  'FDL_Green': FDL_Green,
+  'FDL_Purple': FDL_Purple,
+  'FDL_Red': FDL_Red,
 }
 
-export type imageLib = 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'character1' | 'characters';
+export type imageLib = 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';

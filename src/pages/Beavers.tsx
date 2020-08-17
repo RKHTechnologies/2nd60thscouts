@@ -146,37 +146,37 @@ const Beavers: FC = () => {
               <GridItem>
                 <Icon icon={faSmile} size="2x" />
                 <Title>Friendly Group</Title>
-                <Description>Above all we are happy to help make your move as seamless as possible</Description>
+                <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at </Description>
               </GridItem>
               
               <GridItem>
                 <Icon icon={faChild} size="2x" />
                 <Title>6 - 8 Year olds</Title>
-                <Description>We'll sort everything out for you, taking away the stress and hassle of your move</Description>
+                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
               </GridItem>
 
               <GridItem>
                 <Icon icon={faPaintBrush} size="2x" />
                 <Title>Arts and Crafts</Title>
-                <Description>Our experienced colleagues can provide help with fitting and adjusting packaged items</Description>
+                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu copiosae</Description>
               </GridItem>
               
               <GridItem>
                 <Icon icon={faFutbol} size="2x" />
                 <Title>Games</Title>
-                <Description>We love to have a good time, and learn to work as a team</Description>
+                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu dissentiet</Description>
               </GridItem>
 
               <GridItem>
                 <Icon icon={faCampground} size="2x" />
                 <Title>Camps and Sleepovers</Title>
-                <Description>This cost effective solution allows you to simply pay for the time used</Description>
+                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant accommodare an.</Description>
               </GridItem>
 
               <GridItem>
                 <Icon icon={faCompass} size="2x" />
                 <Title>Life Skills</Title>
-                <Description>As a customer driven organisation, your happiness is our priority</Description>
+                <Description>orem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at</Description>
               </GridItem>
             </Grid>
           </div>
@@ -184,7 +184,7 @@ const Beavers: FC = () => {
         
         <Section id="whosWho">
           <div className="wrapper">
-            <WhosWho />
+            <WhosWho beavers/>
           </div>
         </Section>
 

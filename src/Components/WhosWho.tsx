@@ -19,16 +19,52 @@ const Container = styled.div`
   }
 `;
 
-const WhosWho: FC = () => {
+interface IProps {
+  beavers?: boolean;
+  cubs?: boolean;
+  scouts?: boolean;
+  explorers?: boolean;
+}
+
+const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
   return (
-    <>
-      <Container>
-        <Profile name="Louise Dowell" nickname="King Louie" title="Beaver Leader" />
-        <Profile name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" />
-        <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" />
-        <Profile name="Zoe Gamble" nickname="Kaa" title="Young Leader" />
-      </Container>
-    </>
+    <Container>
+      {beavers ? (  
+        <>
+          <Profile image='FDL_Blue' smallImage name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Blue" />
+          <Profile image='FDL_Blue' smallImage name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Blue" />
+          <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Blue" />
+          <Profile image='FDL_Blue' smallImage name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Blue" />
+        </>
+      ) : null}
+
+      {cubs ? (  
+        <>
+          <Profile image='FDL_Green' smallImage name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Green" />
+        </>
+      ) : null}
+
+      {scouts ? (  
+        <>
+          <Profile name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Green" />
+          <Profile name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Green" />
+          <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Green" />
+          <Profile name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Green" />
+        </>
+      ) : null}
+
+      {explorers ? (  
+        <>
+          <Profile name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Green" />
+          <Profile name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Green" />
+          <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Green" />
+          <Profile name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Green" />
+        </>
+      ) : null}
+    </Container>
   );
 }
 
