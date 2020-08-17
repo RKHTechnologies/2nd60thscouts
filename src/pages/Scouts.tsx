@@ -1,9 +1,13 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import Hero from '../Shared/Hero';
-import { PageBodyContainer } from '../Shared/SharedStyles';
 import scouts from '../img/scouts.png';
+import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
+import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout } from './Beavers';
+import { faCampground, faChild,faRoute, faUsers, faSnowboarding, faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
+import WhosWho from '../Components/WhosWho';
+import badges from '../img/Badge_Placement_Scouts.jpeg';
 
 interface ILogoProps {
   top: number
@@ -34,16 +38,75 @@ export const PageLogo = styled.img`
     }    
 `;
 
+const ScoutsIcon = styled(Icon)`
+  color: ${colours.Purple};
+`;
+const ScoutsTitle = styled(Title)`
+  color: #004851;
+`;
+
 const Scouts: FC = () => {
     return (
       <PageBodyContainer>
         <Hero image="scoutsHero" />
         <PageLogo src={scouts} top={75} />
-        <Section>
+        <PageLogoGap />
+        
+        <Section id="about">
           <div className="wrapper">
+            <PageHeading>Each Scout Troop consists of small units of six to eight Scouts called a Patrol, usually led by a Patrol Leader. Outdoor activities feature prominently, with the highlight being camping. Throughout the year, Scouts learn various skills, such as map reading, camp cooking and first aid in preparation for camp. Rock climbing, potholing, gliding, photography and international experiences are just some of the things they get up to.</PageHeading>
+            <Grid>
+              <GridItem>
+                <ScoutsIcon icon={faUsers} size="2x" />
+                <ScoutsTitle>Scout Patrols</ScoutsTitle>
+                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu copiosae</Description>
+              </GridItem>
+              
+              <GridItem>
+                <ScoutsIcon icon={faChild} size="2x" />
+                <ScoutsTitle>Ages 10 ½ - 14</ScoutsTitle>
+                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
+              </GridItem>
 
+              <GridItem>
+                <ScoutsIcon icon={faCampground} size="2x" />
+                <ScoutsTitle>Camping</ScoutsTitle>
+                <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at </Description>
+              </GridItem>
+              
+              <GridItem>
+                <ScoutsIcon icon={faSnowboarding} size="2x" />
+                <ScoutsTitle>Exciting Activities</ScoutsTitle>
+                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu dissentiet</Description>
+              </GridItem>
+
+              <GridItem>
+                <ScoutsIcon icon={faGlobeEurope} size="2x" />
+                <ScoutsTitle>International Experiences</ScoutsTitle>
+                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant accommodare an.</Description>
+              </GridItem>
+
+              <GridItem>
+                <ScoutsIcon icon={faRoute} size="2x" />
+                <ScoutsTitle>Advanced Skills</ScoutsTitle>
+                <Description>orem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at</Description>
+              </GridItem>
+            </Grid>
           </div>
         </Section>
+
+        <Section id="whosWho">
+          <div className="wrapper">
+            <WhosWho scouts/>
+          </div>
+        </Section>
+
+        <Section id="uniform">
+          <div className="wrapper">
+            <BadgeLayout src={badges} />
+          </div>
+        </Section>
+
       </PageBodyContainer>
     );
 }

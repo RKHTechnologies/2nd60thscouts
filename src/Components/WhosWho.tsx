@@ -40,28 +40,26 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
 
       {cubs ? (  
         <>
-          <Profile image='FDL_Green' smallImage name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Susanne Pickering" nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Chris Ardington" nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Sarah ..." nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="James Hawthorn" nickname="..." title="Assistant Cub Leader" accent="Green" />
         </>
       ) : null}
 
       {scouts ? (  
         <>
-          <Profile name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Green" />
-          <Profile name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Green" />
-          <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Green" />
-          <Profile name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Green" />
+          <Profile image='FDL_Purple' smallImage name="Steve Dowell" nickname="Skip" title="Scout Leader" accent="Purple" />
+          <Profile image='FDL_Purple' smallImage name="Andy Francis" nickname="..." title="Scout Leader" accent="Purple" />
+          <Profile image='FDL_Purple' smallImage name="Chris Ardington" nickname="..." title="Scout Leader" accent="Purple" />
+          <Profile image='FDL_Purple' smallImage name="James Hawthorn" nickname="..." title="Assistant Scout Leader" accent="Purple" />
         </>
       ) : null}
 
       {explorers ? (  
         <>
-          <Profile name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Green" />
-          <Profile name="Andy Francis" nickname="Sgt. Tibbs" title="Beaver Leader" accent="Green" />
-          <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Green" />
-          <Profile name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Green" />
+          <Profile image='FDL_Red' smallImage name="Jacob Illston" nickname="..." title="Explorer Leader" accent="Red" />
+          <Profile image='FDL_Red' smallImage name="Rhys Howard" nickname="..." title="Explorer Leader" accent="Red" />
         </>
       ) : null}
     </Container>

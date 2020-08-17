@@ -1,27 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-
-import highRopes from '../img/cub-high-ropes.jpg';
-import canoes from '../img/canoes.jpg';
-import expedition from '../img/explorer-expedition.jpg';
-import obstacle from '../img/explorer-teamwork-3.jpg';
-import beavers from '../img/beavers-and-leader.jpg';
-import cubs from '../img/cubs-group.jpg';
-import scouts from '../img/scouts-life-jackets.jpg';
-import kayaking from '../img/kayaking.jpg';
 import { imageLib, ImagesDesktop } from './ImageLib';
 import { useMediaQuery } from 'react-responsive';
-
-const images = {
-    'highRopes': highRopes,
-    'canoes': canoes,
-    'expedition': expedition,
-    'obstacle': obstacle,
-    'beavers': beavers,
-    'cubs': cubs,
-    'scouts': scouts,
-    'kayaking': kayaking,
-};
 
 interface HeroProps {
     imageUrl: string;

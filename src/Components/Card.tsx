@@ -45,6 +45,11 @@ const CardContainer = styled.div`
   &:hover {
     transform: scale(1.15);
   }
+
+  @media(max-width: 1100px) {
+    height: 250px;
+    font-size: 0.66em;
+  }
 `;
 
 const PrimaryText = styled.div`

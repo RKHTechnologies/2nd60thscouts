@@ -21,7 +21,7 @@ const HeaderNav = styled.div`
     justify-content: center;
     align-items: center;
     background: ${colours.light};
-    z-index: 1;
+    z-index: 2;
 `;
 
 const HeaderNavContainer = styled.div` 
@@ -33,7 +33,6 @@ const HeaderNavContainer = styled.div`
     align-items: center;
     background: ${colours.light};
     color: ${colours.dark};
-    z-index: 1;
     transition: height 0.3s ease;
 
     & > img {
