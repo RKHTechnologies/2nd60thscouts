@@ -4,9 +4,10 @@ import Hero from '../Shared/Hero';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import cubs from '../img/cubs.png';
-import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description } from './Beavers';
-import { faSmile, faCampground, faChild, faPaintBrush, faFutbol, faCompass, faHiking, faTree, faRoute } from "@fortawesome/free-solid-svg-icons";
+import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout } from './Beavers';
+import { faCampground, faChild, faFutbol, faCompass, faTree, faRoute } from "@fortawesome/free-solid-svg-icons";
 import WhosWho from '../Components/WhosWho';
+import badges from '../img/Badge_Placement_Cubs.jpeg';
 
 interface ILogoProps {
   top: number
@@ -105,6 +106,12 @@ const Cubs: FC = () => {
         <Section id="whosWho">
           <div className="wrapper">
             <WhosWho cubs/>
+          </div>
+        </Section>
+
+        <Section id="uniform">
+          <div className="wrapper">
+            <BadgeLayout src={badges} />
           </div>
         </Section>
 

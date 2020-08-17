@@ -12,11 +12,13 @@ import Explorers from './pages/Explorers';
 import OurCalendar from './pages/OurCalendar';
 import JoinUs from './pages/JoinUs';
 import Documents from './pages/Documents';
+import Footer from './Shared/Footer';
 
 function App() {
   return (
     <>
       <Router>
+        <HeaderBar stickyHeader />
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}`} component={Home} />
           <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} />
@@ -29,7 +31,7 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/documents`} component={Documents} />
           <Route component={Error404} />
         </Switch>
-        <HeaderBar stickyHeader />
+        <Footer />
       </Router>
       <GlobalStyle />
     </>
