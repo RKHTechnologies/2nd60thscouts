@@ -5,7 +5,7 @@ import explorers from '../img/explorers.png';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout } from './Beavers';
-import { faCampground, faChild,faRoute, faUsers, faSnowboarding, faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
+import { faCampground, faChild,faRoute, faSnowboarding, faGlobeEurope, faHiking } from "@fortawesome/free-solid-svg-icons";
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Explorers.jpeg';
 
@@ -54,11 +54,11 @@ const Explorers: FC = () => {
         
         <Section id="about">
           <div className="wrapper">
-            <PageHeading>Each Scout Troop consists of small units of six to eight Scouts called a Patrol, usually led by a Patrol Leader. Outdoor activities feature prominently, with the highlight being camping. Throughout the year, Scouts learn various skills, such as map reading, camp cooking and first aid in preparation for camp. Rock climbing, potholing, gliding, photography and international experiences are just some of the things they get up to.</PageHeading>
+            <PageHeading>Explorers are encouraged to lead themselves in deciding the programme and direction of the Unit, with support and guidance from leaders. The section also includes the Young Leaders’ Scheme, where young people are able to take on a leadership role in one of the younger sections. There is wider scope for activities like offshore sailing, campaigning, performing, parascending, mountaineering and expeditions.</PageHeading>
             <Grid>
               <GridItem>
-                <ExplorersIcon icon={faUsers} size="2x" />
-                <ExplorersTitle>Scout Patrols</ExplorersTitle>
+                <ExplorersIcon icon={faHiking} size="2x" />
+                <ExplorersTitle>Self Led</ExplorersTitle>
                 <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu copiosae</Description>
               </GridItem>
               
