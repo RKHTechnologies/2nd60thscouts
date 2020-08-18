@@ -1,7 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import Profile from './Profile';
-import { colours } from '../Shared/SharedStyles';
 
 const Container = styled.div`
   width: 100%;

@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import styled from 'styled-components';
 import { imageLib, ImagesDesktop } from './ImageLib';
 import { useMediaQuery } from 'react-responsive';
+// import { SharedSettings } from './SharedStyles';
 
 interface HeroProps {
     imageUrl: string;
@@ -19,6 +20,10 @@ const HeroBanner = styled.div`
     background-repeat: no-repeat;
     background-position-y: ${(p: HeroProps):string => p.imageHeight ?? "center"};
     background-position-x: center;
+
+    /* @media(max-width: 700px) {
+        height: 300px;
+    } */
 `;
 
 

@@ -5,7 +5,7 @@ import explorers from '../img/explorers.png';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout } from './Beavers';
-import { faCampground, faChild,faRoute, faSnowboarding, faGlobeEurope, faHiking } from "@fortawesome/free-solid-svg-icons";
+import { faCampground, faChild, faGlobeEurope, faHiking, faMountain, faUsers } from "@fortawesome/free-solid-svg-icons";
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Explorers.jpeg';
 
@@ -39,10 +39,10 @@ export const PageLogo = styled.img`
 `;
 
 const ExplorersIcon = styled(Icon)`
-  color: ${colours.Purple};
+  color: ${colours.Red};
 `;
 const ExplorersTitle = styled(Title)`
-  color: #004851;
+  color: #003A82;
 `;
 
 const Explorers: FC = () => {
@@ -64,7 +64,7 @@ const Explorers: FC = () => {
               
               <GridItem>
                 <ExplorersIcon icon={faChild} size="2x" />
-                <ExplorersTitle>Ages 10 ½ - 14</ExplorersTitle>
+                <ExplorersTitle>Ages 14 - 18</ExplorersTitle>
                 <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
               </GridItem>
 
@@ -75,20 +75,20 @@ const Explorers: FC = () => {
               </GridItem>
               
               <GridItem>
-                <ExplorersIcon icon={faSnowboarding} size="2x" />
-                <ExplorersTitle>Exciting Activities</ExplorersTitle>
+                <ExplorersIcon icon={faGlobeEurope} size="2x" />
+                <ExplorersTitle>International Experiences</ExplorersTitle>
                 <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu dissentiet</Description>
               </GridItem>
 
               <GridItem>
-                <ExplorersIcon icon={faGlobeEurope} size="2x" />
-                <ExplorersTitle>International Experiences</ExplorersTitle>
+                <ExplorersIcon icon={faMountain} size="2x" />
+                <ExplorersTitle>mountaineering</ExplorersTitle>
                 <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant accommodare an.</Description>
               </GridItem>
 
               <GridItem>
-                <ExplorersIcon icon={faRoute} size="2x" />
-                <ExplorersTitle>Advanced Skills</ExplorersTitle>
+                <ExplorersIcon icon={faUsers} size="2x" />
+                <ExplorersTitle>Leadership Experience</ExplorersTitle>
                 <Description>orem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at</Description>
               </GridItem>
             </Grid>
