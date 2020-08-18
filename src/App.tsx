@@ -13,11 +13,13 @@ import OurCalendar from './pages/OurCalendar';
 import JoinUs from './pages/JoinUs';
 import Documents from './pages/Documents';
 import Footer from './Shared/Footer';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <>
       <Router>
+        <ScrollToTop />
         <HeaderBar stickyHeader />
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}`} component={Home} />
