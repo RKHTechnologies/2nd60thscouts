@@ -69,6 +69,11 @@ const BeaversCharacters = styled.div`
   background: url(${ImagesDesktop['characters']});
   background-size: contain;
   background-repeat: no-repeat;
+
+  @media(max-width: 500px) {
+    width: 290px;
+    height: 119px;
+  }
 `;
 
 const Motto = styled.div`
@@ -77,6 +82,10 @@ const Motto = styled.div`
   font-style: italic;
   color: ${colours.Blue};
   margin-bottom: 20px;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    font-size: 2em;
+  }
 `;
 
 

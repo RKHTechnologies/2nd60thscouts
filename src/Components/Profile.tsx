@@ -1,16 +1,25 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { imageLib, ImagesDesktop } from '../Shared/ImageLib';
-import { colours, Colour } from '../Shared/SharedStyles';
+import { colours, Colour, SharedSettings } from '../Shared/SharedStyles';
 
 const ProfileContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 220px 1fr;
   grid-template-areas: 
     'pic name'
     'pic nickname'
-    'pic title';
+    'pic title'
+    'pic .';
   position: relative;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    grid-template-columns: 170px 1fr;
+  }
+
+  @media(max-width: 380px) {
+    grid-template-columns: 120px 1fr;
+  }
 `;
 
 interface ImageProps {
@@ -30,7 +39,30 @@ const ProfilePic = styled.div`
   height: 200px;
   border-radius: 50%;
   border: 5px solid ${(p: INameProps) => colours[p.accent]};
-  z-index: 1;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 200px; 
+    background: ${(p: INameProps) => colours[p.accent]};;
+    left: 50%;
+    top: -5px;
+    z-index: -1;
+  }
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    height: 150px;
+    width: 150px;
+    &:before { height: 50px; }
+  }
+
+  @media(max-width: 380px) {
+    height: 100px;
+    width: 100px;
+    &:before { width: 150px; }
+  }
 `;
 
 interface INameProps {
@@ -43,27 +75,57 @@ const Name = styled.div`
   font-size: 2em;
   color: ${colours.light};
   background: ${(p: INameProps) => colours[p.accent]};
-  border-radius: 100px;
-  margin-left: -158px;
-  margin-top: 0px;
-  padding-left: 150px;
-  z-index: 0;
   display: flex;
   align-items: center;
-  max-height: 70px;
+  height: 70px;
+  border-radius: 100px;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    font-size: 1.5em;
+    height: 50px;
+  }
+
+  @media(max-width: 380px) {
+    font-size: 1.2em;
+  }
 `;
 
 const Nickname = styled.div`
   grid-area: nickname;
   font-weight: 400;
   font-size: 1.4em;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  
+  @media(max-width: ${SharedSettings.mobile}) {
+    font-size: 1em;
+    height: 30px;
+  }
+
+  @media(max-width: 380px) {
+    font-size: 0.9em;
+    height: 23px;
+  }
 `;
 
 const Title = styled.div`
   grid-area: title;
   font-size: 1.4em;
   font-weight: 600;
-  margin-top: -30px;
+  height: 45px;
+  display: flex;
+  align-items: flex-end;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    font-size: 1em;
+    height: 30px;
+  }
+
+  @media(max-width: 380px) {
+    font-size: 0.9em;
+    height: 23px;
+  }
 `;
 
 interface IProps {

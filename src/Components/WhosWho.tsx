@@ -13,9 +13,9 @@ const Container = styled.div`
     grid-gap: 20px;
   }
 
-  @media(max-width: 1100px) {
+  @media(max-width: 780px) {
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 `;
 
