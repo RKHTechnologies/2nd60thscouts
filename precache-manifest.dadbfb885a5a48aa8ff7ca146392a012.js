@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0e6dcdcaab6cedf2a520e9614ca6cad3",
+    "revision": "1e28ae5e405a887fcf885e5c72531853",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "5ea2d9b078493ea7e1bf",
+    "revision": "659742e80ecc95d09c10",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "7ba6fcbb342dd9ee5576",
-    "url": "/2nd60thscouts/static/js/2.16d02089.chunk.js"
+    "revision": "04ba8b5480ac08119b8f",
+    "url": "/2nd60thscouts/static/js/2.b35a10c9.chunk.js"
   },
   {
     "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
-    "url": "/2nd60thscouts/static/js/2.16d02089.chunk.js.LICENSE.txt"
+    "url": "/2nd60thscouts/static/js/2.b35a10c9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5ea2d9b078493ea7e1bf",
-    "url": "/2nd60thscouts/static/js/main.baea382d.chunk.js"
+    "revision": "659742e80ecc95d09c10",
+    "url": "/2nd60thscouts/static/js/main.dc9d216c.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
@@ -62,6 +62,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "244ee1d95f0105c7faae13e205d30610",
     "url": "/2nd60thscouts/static/media/JessicaHoward.244ee1d9.jpg"
+  },
+  {
+    "revision": "3c3a5fe123657e52e1fb28ece687b085",
+    "url": "/2nd60thscouts/static/media/PDFtest.3c3a5fe1.pdf"
+  },
+  {
+    "revision": "3c3a5fe123657e52e1fb28ece687b085",
+    "url": "/2nd60thscouts/static/media/PDFtest2.3c3a5fe1.pdf"
   },
   {
     "revision": "8c8521de0a6ef7b932fad842b51b3450",
