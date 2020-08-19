@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1e28ae5e405a887fcf885e5c72531853",
+    "revision": "eb32c7b7dda3b9c2df960c701310f058",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "659742e80ecc95d09c10",
+    "revision": "3e57e45508e53ae3dbf5",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2nd60thscouts/static/js/2.b35a10c9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "659742e80ecc95d09c10",
-    "url": "/2nd60thscouts/static/js/main.dc9d216c.chunk.js"
+    "revision": "3e57e45508e53ae3dbf5",
+    "url": "/2nd60thscouts/static/js/main.729b8d30.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
