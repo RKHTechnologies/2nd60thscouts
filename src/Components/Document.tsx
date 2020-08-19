@@ -16,6 +16,10 @@ const DocumentContainer = styled.a`
   grid-template-areas: 
     'icon name'
     'icon description';
+
+  &:hover {
+    background: #c9c9c9;
+  }
 `;
 
 interface IconProps {
@@ -35,12 +39,12 @@ const Name = styled.div`
   font-weight: 400;
   margin-top: 10px;
   margin-left: -3px;
-  /* color: ${colours.Blue}; */
 `;
 
 const Description = styled.div`
   grid-area: description;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
+  font-weight: 200;
 `;
 
 

@@ -3,7 +3,6 @@ import Hero from '../Shared/Hero';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import styled from 'styled-components';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import Document from '../Components/Document';
 
 const TextOverlay = styled.div`
@@ -20,10 +19,17 @@ const TextOverlay = styled.div`
   background: rgba(255,255,255,0.15);
 `;
 
+const GroupContainer = styled.div`
+  width: 100%;
+  display: Grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+`;
+
 const DocumentsGroup = styled.div`
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 `;
 
@@ -44,14 +50,23 @@ const Documents: FC = () => {
         <Section id="Documents">
           <div className="wrapper">
 
-            <DocumentsGroup>
-              <GroupHeader>Example Forms</GroupHeader>
-              <Document name="Document 1" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
-              <Document name="Scouts Kit List" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
-              <Document name="Test Item" description="I'm a file description" filename="PDFtest2.pdf" accent="Red" />
-              <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
-            </DocumentsGroup>
+            <GroupContainer>
+              <DocumentsGroup>
+                <GroupHeader>Something Forms</GroupHeader>
+                <Document name="Document 1" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
+                <Document name="Scouts Kit List" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
+                <Document name="Test Item" description="I'm a file description" filename="PDFtest2.pdf" accent="Blue" />
+                <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
+              </DocumentsGroup>
 
+              <DocumentsGroup>
+                <GroupHeader>Example Forms</GroupHeader>
+                <Document name="Document 1" description="I'm a file description" filename="PDFtest.pdf" accent="Red" />
+                <Document name="Scouts Kit List" description="I'm a file description" filename="PDFtest.pdf" accent="Red" />
+                <Document name="Test Item" description="I'm a file description" filename="PDFtest2.pdf" accent="Red" />
+                <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Red" />
+              </DocumentsGroup>
+            </GroupContainer>
           </div>
         </Section>
 
