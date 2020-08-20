@@ -52,19 +52,19 @@ const Documents: FC = () => {
 
             <GroupContainer>
               <DocumentsGroup>
-                <GroupHeader>Something Forms</GroupHeader>
-                <Document name="Document 1" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
-                <Document name="Scouts Kit List" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
-                <Document name="Test Item" description="I'm a file description" filename="PDFtest2.pdf" accent="Blue" />
-                <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Blue" />
+                <GroupHeader>Forms</GroupHeader>
+                <Document name="Membership Form" description="Fill in to sign up" filename="MembershipForm.pdf" accent="Red" />
+                <Document name="Order Form" description="Form for Hoodies &amp; Polos" filename="OrderForm.pdf" accent="Red" />
+                <Document name="Gift Aid" description="Form for parents" filename="GiftAid.pdf" accent="Red" />
+                {/* <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Red" /> */}
               </DocumentsGroup>
-
+              
               <DocumentsGroup>
-                <GroupHeader>Example Forms</GroupHeader>
-                <Document name="Document 1" description="I'm a file description" filename="PDFtest.pdf" accent="Red" />
-                <Document name="Scouts Kit List" description="I'm a file description" filename="PDFtest.pdf" accent="Red" />
-                <Document name="Test Item" description="I'm a file description" filename="PDFtest2.pdf" accent="Red" />
-                <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Red" />
+                <GroupHeader>Parents Guides</GroupHeader>
+                <Document name="Beavers Guide" description="A Parents Guide to Beavers" filename="ParentsGuidetoBeavers.pdf" accent="Blue" />
+                <Document name="Cubs Guide" description="A Parents Guide to Cubs" filename="ParentsGuidetoCubs.pdf" accent="Blue" />
+                <Document name="Scouts Guide" description="A Parents Guide to Scouts" filename="ParentsGuidetoScouts.pdf" accent="Blue" />
+                <Document name="Explorers Guide" description="A Parents Guide to Explorers" filename="ParentsGuidetoExplorers.pdf" accent="Blue" />
               </DocumentsGroup>
             </GroupContainer>
           </div>

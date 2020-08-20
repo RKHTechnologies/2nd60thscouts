@@ -4,10 +4,11 @@ import Hero from '../Shared/Hero';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import cubs from '../img/cubs.png';
-import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout } from './Beavers';
+import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout, DocumentContainer } from './Beavers';
 import { faCampground, faChild, faFutbol, faCompass, faTree, faRoute } from "@fortawesome/free-solid-svg-icons";
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Cubs.jpeg';
+import Document from '../Components/Document';
 
 interface ILogoProps {
   top: number
@@ -102,6 +103,10 @@ const Cubs: FC = () => {
             </Grid>
           </div>
         </Section>
+
+        <DocumentContainer>
+          <Document name="Parents Guide" description="A Parents Guide to Cubs" filename="ParentsGuidetoCubs.pdf" accent="Green" />
+        </DocumentContainer>
 
         <Section id="whosWho">
           <div className="wrapper">

@@ -9,6 +9,7 @@ import WhosWho from '../Components/WhosWho';
 import { ImagesDesktop } from '../Shared/ImageLib';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSmile, faCampground, faChild, faPaintBrush, faFutbol, faCompass } from "@fortawesome/free-solid-svg-icons";
+import Document from '../Components/Document';
 
 interface ILogoProps {
   top: number
@@ -137,9 +138,10 @@ export const Description = styled.p`
   line-height: 24px;
 `;
 
-
-
-
+export const DocumentContainer = styled.div`
+  width: 400px;
+  margin: -60px auto 50px;
+`;
 
 const Beavers: FC = () => {
     return (
@@ -190,6 +192,10 @@ const Beavers: FC = () => {
             </Grid>
           </div>
         </Section>
+
+        <DocumentContainer>
+          <Document name="Parents Guide" description="A Parents Guide to Beavers" filename="ParentsGuidetoBeavers.pdf" accent="Blue" />
+        </DocumentContainer>
         
         <Section id="whosWho">
           <div className="wrapper">

@@ -35,10 +35,10 @@ const PDFIcon = styled(FontAwesomeIcon)`
 
 const Name = styled.div`
   grid-area: name;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: 400;
-  margin-top: 10px;
-  margin-left: -3px;
+  margin-top: 11px;
+  margin-left: -1px;
 `;
 
 const Description = styled.div`
