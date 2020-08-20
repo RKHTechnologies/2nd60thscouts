@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.77d2bc83.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.77d2bc83.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.6a03c3b2.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.6a03c3b2.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
     "static/js/2.b35a10c9.chunk.js": "/2nd60thscouts/static/js/2.b35a10c9.chunk.js",
     "static/js/2.b35a10c9.chunk.js.map": "/2nd60thscouts/static/js/2.b35a10c9.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.886e9468f2e8a0c4b05b8af3d23cb073.js": "/2nd60thscouts/precache-manifest.886e9468f2e8a0c4b05b8af3d23cb073.js",
+    "precache-manifest.00fe8d4a031889b48f0a02b4e3e5933a.js": "/2nd60thscouts/precache-manifest.00fe8d4a031889b48f0a02b4e3e5933a.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
     "static/js/2.b35a10c9.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.b35a10c9.chunk.js.LICENSE.txt",
@@ -21,9 +21,15 @@
     "static/media/FDL_Green.png": "/2nd60thscouts/static/media/FDL_Green.dedd63d4.png",
     "static/media/FDL_Purple.png": "/2nd60thscouts/static/media/FDL_Purple.6c112e39.png",
     "static/media/FDL_Red.png": "/2nd60thscouts/static/media/FDL_Red.4c9b6c76.png",
+    "static/media/GiftAid.pdf": "/2nd60thscouts/static/media/GiftAid.94d44fcc.pdf",
     "static/media/JessicaHoward.jpg": "/2nd60thscouts/static/media/JessicaHoward.244ee1d9.jpg",
+    "static/media/MembershipForm.pdf": "/2nd60thscouts/static/media/MembershipForm.0f02d755.pdf",
+    "static/media/OrderForm.pdf": "/2nd60thscouts/static/media/OrderForm.dad49942.pdf",
     "static/media/PDFtest.pdf": "/2nd60thscouts/static/media/PDFtest.3c3a5fe1.pdf",
-    "static/media/PDFtest2.pdf": "/2nd60thscouts/static/media/PDFtest2.3c3a5fe1.pdf",
+    "static/media/ParentsGuidetoBeavers.pdf": "/2nd60thscouts/static/media/ParentsGuidetoBeavers.10a1a2d0.pdf",
+    "static/media/ParentsGuidetoCubs.pdf": "/2nd60thscouts/static/media/ParentsGuidetoCubs.813f1c28.pdf",
+    "static/media/ParentsGuidetoExplorers.pdf": "/2nd60thscouts/static/media/ParentsGuidetoExplorers.e2751859.pdf",
+    "static/media/ParentsGuidetoScouts.pdf": "/2nd60thscouts/static/media/ParentsGuidetoScouts.e8bd556d.pdf",
     "static/media/RKHT_logo.png": "/2nd60thscouts/static/media/RKHT_logo.8c8521de.png",
     "static/media/beavers-and-leader.jpg": "/2nd60thscouts/static/media/beavers-and-leader.18bcf9c3.jpg",
     "static/media/beavers-characters.png": "/2nd60thscouts/static/media/beavers-characters.0d483ffc.png",
@@ -49,6 +55,6 @@
     "static/js/runtime-main.068863df.js",
     "static/js/2.b35a10c9.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.77d2bc83.chunk.js"
+    "static/js/main.6a03c3b2.chunk.js"
   ]
 }
