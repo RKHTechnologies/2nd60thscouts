@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import Hero from '../Shared/Hero';
-import { PageBodyContainer, colours } from '../Shared/SharedStyles';
+import { PageBodyContainer, colours, SharedSettings } from '../Shared/SharedStyles';
 import { Section } from './Home';
 import styled from 'styled-components';
 import Document from '../Components/Document';
@@ -24,6 +24,10 @@ const GroupContainer = styled.div`
   display: Grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
+
+  @media(max-width: 1400px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const DocumentsGroup = styled.div`
@@ -31,6 +35,10 @@ const DocumentsGroup = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+
+  @media(max-width: 660px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const GroupHeader = styled.div`

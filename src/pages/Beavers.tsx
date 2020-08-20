@@ -141,6 +141,11 @@ export const Description = styled.p`
 export const DocumentContainer = styled.div`
   width: 400px;
   margin: -60px auto 50px;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    width: auto;
+    margin-top: -30px;
+  }
 `;
 
 const Beavers: FC = () => {

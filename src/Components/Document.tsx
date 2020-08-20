@@ -6,6 +6,7 @@ import styled from 'styled-components';
 
 const DocumentContainer = styled.a`
   width: 100%;
+  margin: auto;
   background: #eaeaea;
   box-sizing: border-box;
   text-decoration: none;
@@ -19,6 +20,10 @@ const DocumentContainer = styled.a`
 
   &:hover {
     background: #c9c9c9;
+  }
+
+  @media(max-width: 800px) {
+    width: 96%;
   }
 `;
 
