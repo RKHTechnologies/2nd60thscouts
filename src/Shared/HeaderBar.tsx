@@ -183,6 +183,12 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
         history.push(`${process.env.PUBLIC_URL}${link}`);
     }
 
+    const scoutShop = () => {
+        console.log("Going to scout shop");
+        setMenuOpen(false);
+        window.open("http://www.leicestershirescoutshop.com/", "_blank");
+    }
+
     return (
         <HeaderNav stickyHeader={stickyHeader}>
             <HeaderNavContainer>
@@ -198,7 +204,7 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
                     <HeaderButton onClick={() => handleNav("/ourCalendar")}>Our Calendar</HeaderButton>
                     <HeaderButton onClick={() => handleNav("/joinUs")}>Join Us</HeaderButton>
                     <HeaderButton onClick={() => handleNav("/documents")}>Useful Documents</HeaderButton>
-                    <HeaderButton onClick={() => handleNav("/shop")}>Scout Shop</HeaderButton>
+                    <HeaderButton onClick={scoutShop}>Scout Shop</HeaderButton>
                 </NavItemsRightContainer>
             </HeaderNavContainer>
         </HeaderNav>
