@@ -42,7 +42,7 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
           <Profile image='FDL_Green' smallImage name="Susanne Pickering" nickname="..." title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="Chris Ardington" nickname="..." title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="Sarah ..." nickname="..." title="Cub Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="James Hawthorn" nickname="..." title="Assistant Cub Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="James Hawthorne" nickname="..." title="Assistant Cub Leader" accent="Green" />
         </>
       ) : null}
 
@@ -51,7 +51,7 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
           <Profile image='FDL_Purple' smallImage name="Steve Dowell" nickname="Skip" title="Scout Leader" accent="Purple" />
           <Profile image='FDL_Purple' smallImage name="Andy Francis" nickname="..." title="Scout Leader" accent="Purple" />
           <Profile image='FDL_Purple' smallImage name="Chris Ardington" nickname="..." title="Scout Leader" accent="Purple" />
-          <Profile image='FDL_Purple' smallImage name="James Hawthorn" nickname="..." title="Assistant Scout Leader" accent="Purple" />
+          <Profile image='FDL_Purple' smallImage name="James Hawthorne" nickname="..." title="Assistant Scout Leader" accent="Purple" />
         </>
       ) : null}
 

@@ -10,6 +10,7 @@ import ScoutSection from '../Components/ScoutSection';
 import calendarIcon from '../img/Calendar.svg';
 import leaders from '../img/leaders_on_poachers.jpg';
 import JumboCard from '../Shared/JumboCard';
+import Footer from '../Shared/Footer';
 
 const mobile = "1100px";
 
@@ -234,6 +235,8 @@ const Home: FC = () => {
       <Section id="joinUs" fullwidth lastItem>
         
       </Section>
+
+      {/* <Footer /> */}
     </PageBodyContainer>
   );
 }

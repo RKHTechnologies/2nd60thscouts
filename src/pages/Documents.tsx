@@ -17,6 +17,11 @@ const TextOverlay = styled.div`
   align-items: center;
   justify-content: center;
   background: rgba(255,255,255,0.15);
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    font-size: 10vw;
+    font-weight: 600;
+  }
 `;
 
 const GroupContainer = styled.div`

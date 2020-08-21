@@ -178,7 +178,6 @@ const HeaderBar: React.FC<IProps> = ({ stickyHeader }: IProps) => {
     const history = useHistory();
 
     const handleNav = (link: string): void => {
-        console.log("clicked nav", link);
         setMenuOpen(false);
         history.push(`${process.env.PUBLIC_URL}${link}`);
     }

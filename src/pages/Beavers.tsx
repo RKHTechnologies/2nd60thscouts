@@ -10,6 +10,7 @@ import { ImagesDesktop } from '../Shared/ImageLib';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSmile, faCampground, faChild, faPaintBrush, faFutbol, faCompass } from "@fortawesome/free-solid-svg-icons";
 import Document from '../Components/Document';
+import Footer from '../Shared/Footer';
 
 interface ILogoProps {
   top: number

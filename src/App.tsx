@@ -33,7 +33,6 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/documents`} component={Documents} />
           <Route component={Error404} />
         </Switch>
-        <Footer />
       </Router>
       <GlobalStyle />
     </>
