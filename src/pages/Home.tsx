@@ -11,6 +11,7 @@ import calendarIcon from '../img/Calendar.svg';
 import leaders from '../img/leaders_on_poachers.jpg';
 import JumboCard from '../Shared/JumboCard';
 import Footer from '../Shared/Footer';
+import Contact from '../Components/Contact';
 
 const mobile = "1100px";
 
@@ -225,18 +226,18 @@ const Home: FC = () => {
             title="Adult Volunteering" 
             text="Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eoscu eum an brute copiosae hendrerit. Eos erant dolorum an."
             buttonText="Join Us"
-            link="/joinUs"
+            link="#joinUs"
             image="leaders"
             colour="Blue"
           />
         </div>
       </Section>
 
-      <Section id="joinUs" fullwidth lastItem>
-        
+      <Section id="ContactUs" fullwidth lastItem>
+        <Contact />
       </Section>
 
-      {/* <Footer /> */}
+      <Footer />
     </PageBodyContainer>
   );
 }

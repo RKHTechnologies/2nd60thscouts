@@ -9,6 +9,7 @@ import { faCampground, faChild, faGlobeEurope, faHiking, faMountain, faUsers } f
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Explorers.jpeg';
 import Document from '../Components/Document';
+import Footer from '../Shared/Footer';
 
 interface ILogoProps {
   top: number
@@ -112,6 +113,7 @@ const Explorers: FC = () => {
           </div>
         </Section>
 
+        <Footer />
       </PageBodyContainer>
     );
 }

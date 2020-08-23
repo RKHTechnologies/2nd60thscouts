@@ -10,9 +10,7 @@ import Cubs from './pages/Cubs';
 import Scouts from './pages/Scouts';
 import Explorers from './pages/Explorers';
 import OurCalendar from './pages/OurCalendar';
-import JoinUs from './pages/JoinUs';
 import Documents from './pages/Documents';
-import Footer from './Shared/Footer';
 import ScrollToTop from './ScrollToTop';
 
 function App() {
@@ -29,7 +27,6 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/scouts`} component={Scouts} />
           <Route exact path={`${process.env.PUBLIC_URL}/explorers`} component={Explorers} />
           <Route exact path={`${process.env.PUBLIC_URL}/ourCalendar`} component={OurCalendar} />
-          <Route exact path={`${process.env.PUBLIC_URL}/joinUs`} component={JoinUs} />
           <Route exact path={`${process.env.PUBLIC_URL}/documents`} component={Documents} />
           <Route component={Error404} />
         </Switch>

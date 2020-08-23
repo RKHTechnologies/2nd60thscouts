@@ -221,6 +221,8 @@ const Beavers: FC = () => {
             <BeaversCharacters />
           </MottoContainer>
         </Section>
+
+        <Footer />
       </PageBodyContainer>
     );
 }

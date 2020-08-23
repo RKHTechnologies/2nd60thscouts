@@ -9,6 +9,7 @@ import { faCampground, faChild,faRoute, faUsers, faSnowboarding, faGlobeEurope }
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Scouts.jpeg';
 import Document from '../Components/Document';
+import Footer from '../Shared/Footer';
 
 interface ILogoProps {
   top: number
@@ -112,6 +113,7 @@ const Scouts: FC = () => {
           </div>
         </Section>
 
+        <Footer />
       </PageBodyContainer>
     );
 }

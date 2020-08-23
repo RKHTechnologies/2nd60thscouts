@@ -6,9 +6,10 @@ import { ImagesDesktop } from '../Shared/ImageLib';
 const FooterContainer = styled.footer`
   width: 100%;
   height: 80px;
-  background: #C2C2C2;
+  /* background: #C2C2C2; */
+  background: #D4D4D4;
   color: #707070;
-  border-top: 3px solid #707070;
+  /* border-top: 3px solid #707070; */
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -4,6 +4,7 @@ import { PageBodyContainer, colours, SharedSettings } from '../Shared/SharedStyl
 import { Section } from './Home';
 import styled from 'styled-components';
 import Document from '../Components/Document';
+import Footer from '../Shared/Footer';
 
 const TextOverlay = styled.div`
   font-size: 6vw;
@@ -83,7 +84,7 @@ const Documents: FC = () => {
           </div>
         </Section>
 
-
+        <Footer />
       </PageBodyContainer>
     );
 }

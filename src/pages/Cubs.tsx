@@ -9,6 +9,7 @@ import { faCampground, faChild, faFutbol, faCompass, faTree, faRoute } from "@fo
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Cubs.jpeg';
 import Document from '../Components/Document';
+import Footer from '../Shared/Footer';
 
 interface ILogoProps {
   top: number
@@ -120,6 +121,7 @@ const Cubs: FC = () => {
           </div>
         </Section>
 
+        <Footer />
       </PageBodyContainer>
     );
 }
