@@ -1,16 +1,25 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colours } from '../Shared/SharedStyles';
+import { colours, SharedSettings } from '../Shared/SharedStyles';
 import { ImagesDesktop } from '../Shared/ImageLib';
 
 const Container = styled.div`
   background: ${colours.Blue};
   display: grid;
-  grid-template-columns: 20% 1fr 30%;
+  grid-template-columns: 20% 3fr 1fr 15%;
   grid-template-areas: 
-    '. title image'
-    '. text image';
+    '. title image .'
+    '. text image .';
   padding-top: 20px;
+  margin-bottom: 40px;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'title'
+      'text'
+      'image';
+  }
 `;
 
 const Title = styled.div`
@@ -18,6 +27,11 @@ const Title = styled.div`
   width: 100%;
   font-size: 3em;
   color: ${colours.light};
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    text-align: center;
+    font-size: 2em;
+  }
 `;
 
 const Text = styled.div`
@@ -26,6 +40,12 @@ const Text = styled.div`
   font-size: 1.5em;
   margin: 10px auto 25px;
   color: ${colours.light};
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 10px;
+  }
 `;
 
 const Bear = styled.div`
@@ -36,7 +56,12 @@ const Bear = styled.div`
   background-size: cover;
   background-size: contain;
   background-position: center;
+  background-position-y: bottom;
   background-repeat: no-repeat;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    height: 150px;
+  }
 `;
 
 const NeedParents: FC = () => {
