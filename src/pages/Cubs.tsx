@@ -12,6 +12,7 @@ import Document from '../Components/Document';
 import Footer from '../Shared/Footer';
 import CalendarLink from '../Components/CalendarLink';
 import Contact from '../Components/Contact';
+import NeedParents from '../Components/NeedParents';
 
 interface ILogoProps {
   top: number
@@ -122,6 +123,8 @@ const Cubs: FC = () => {
             <CalendarLink />
           </div>
         </Section>
+
+        <NeedParents />
 
         <Section id="uniform">
           <div className="wrapper">
