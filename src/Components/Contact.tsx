@@ -1,10 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { colours, SharedSettings } from "../Shared/SharedStyles";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
-
 
 interface sectionProps {
   dark?: boolean;
@@ -45,10 +41,10 @@ const Container = styled.div`
 `;
 
 const MainHeader = styled.h1`
-  font-weight: 600;
+  font-weight: 500;
   color: ${colours.light};
   font-size: 3em;
-  margin: 0 0 30px;
+  margin: 0;
 
   @media(max-width: ${SharedSettings.mobile}) {
     font-size: 2.4em;
@@ -58,62 +54,13 @@ const MainHeader = styled.h1`
 
 const SubHeader = styled.div`
   max-width: 1000px;
-  color: ${colours.dark};
+  color: ${colours.light};
+  margin-bottom: 40px;
+  margin-top: 10px;
+  font-weight: 500;
 
   @media(max-width: ${SharedSettings.mobile}) {
     font-size: 0.8em;
-  }
-`;
-
-const LinksContainer = styled.div`
-  padding: 20px;
-  max-width: 1000px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  @media(max-width: 1100px) {
-    grid-template-columns: 1fr;
-    font-size: 0.7em;
-    margin: 0;
-  }
-`;
-
-interface LinkProps {
-  active?: boolean;
-}
-
-const Link = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 10px 18px 14px 0;
-  border: 3px solid transparent;
-  border-radius: 22px;
-  /* cursor: pointer; */
-  margin: 10px;
-  background: ${(p: LinkProps): string => p.active ? "#fff" : "transparent"};
-  color: ${(p: LinkProps): string => p.active ? colours.primary : colours.dark};
-  font-weight: 400;
-
-  & > div {
-    background: ${(p: LinkProps): string => p.active ? colours.primary : colours.dark};
-  }
-
-  /* &:hover {
-    border-color: ${colours.light};
-  } */
-
-  &:nth-child(even) {
-    flex-direction: row-reverse;
-    padding-left: 20px;
-    padding-right: 5px;
-  }
-
-  @media(max-width: 1100px) {
-    flex-direction: row !important;
-    padding: 0 18px 0 0 !important;
-    margin: 0;
   }
 `;
 
@@ -140,16 +87,20 @@ const Column = styled.div`
 `;
 
 const FormItem = styled.input`
-    width: 100%;
-    height: 50px;
-    background: ${colours.light};
-    border: 0;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-    padding: 0 20px;
-    font-size: 0.8em;
-    font-weight: 400;
+  width: 100%;
+  height: 50px;
+  background: ${colours.light};
+  border: 0;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-size: 0.8em;
+  font-weight: 400;
+
+  &::placeholder {
+    color: #00A794;
+  }
 `;
 
 const MultiLineForm = styled.textarea`
@@ -157,41 +108,34 @@ const MultiLineForm = styled.textarea`
   height: 120px;
   background: ${colours.light};
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
   margin-bottom: 20px;
   box-sizing: border-box;
   padding: 14px 20px 0;
   font-size: 0.8em;
   font-weight: 400;
-`;
 
-export const SubmitButton = styled.input`
-  width: 300px;
-  height: 50px;
-  border-radius: 3px;
-  background: ${colours.light};
-  color: ${colours.dark};
-  border: 3px solid ${colours.dark};
-
-  font-size: 20px;
-  line-height: 44px;
-  font-size: 1.1em;
-  cursor: pointer;
-
-  &:hover {
-    background: #E7CC92;
-    color: ${colours.dark};
-    border-color: ${colours.dark};
+  &::placeholder {
+    color: #00A794;
   }
 `;
 
-const Icon = styled(FontAwesomeIcon)`
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin: 7px 15px 0px;
-`;
+export const SubmitButton = styled.input`
+  border-radius: 40px;
+  background: ${colours.light};
+  color: ${colours.Teal};
+  border: none;
+  font-size: 0.8em;
+  cursor: pointer;
+  padding: 14px 90px;
+  margin-top: 20px;
+  font-weight: 800;
 
+  &:hover {
+    color: ${colours.Purple};
+    background: ${colours.grey5};
+  }
+`;
 
 const Contact: React.FC = () => {
 
@@ -207,7 +151,7 @@ const Contact: React.FC = () => {
     console.dir(json);
 
     window.open(
-      `mailto:enquiries@northremovals.co.uk
+      `mailto:admin@2nd60thscouts.org
         ?subject=${newObject.subject}
         &body=%0D%0A
         Name: ${newObject.name}%0D%0A
@@ -223,20 +167,20 @@ const Contact: React.FC = () => {
     <Section background={colours.Teal}>
         <Container>
           <MainHeader>Contact Us</MainHeader>
-          <SubHeader>Please get in touch today if you have any questions, are interested in any of our services - or are looking for hassle free solutions to your removal needs!</SubHeader>
+          <SubHeader>If you're looking to get involved in scouting, or simply wish to get in contact with us; please enter your message below and we will get back to you as soon as possible</SubHeader>
 
           <FormContainer onSubmit={handleSubmit}>
             <Column>
               <FormItem placeholder="Name" name="name" />
-              <FormItem placeholder="Phone" name="phone" />
               <FormItem placeholder="Email" name="email" />
+              <FormItem placeholder="Phone" name="phone" />
             </Column>
 
             <Column>
               <FormItem placeholder="Subject" name="subject" />
               <MultiLineForm placeholder="Your Message" name="message"></MultiLineForm>
             </Column>
-            <SubmitButton type="submit" value="SUBMIT" />
+            <SubmitButton type="submit" value="Submit" />
           </FormContainer>
 
         </Container>

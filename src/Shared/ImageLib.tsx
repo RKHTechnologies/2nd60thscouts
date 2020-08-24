@@ -1,5 +1,6 @@
 import rkh from '../img/RKHT_logo.png';
 import leaders from '../img/leaders_on_poachers.jpg';
+import bear from '../img/bear.png'
 
 // Section images
 import beavers360 from '../img/beavers-singing.jpg';
@@ -32,6 +33,7 @@ import FDL_Red from '../img/FDL_Red.png';
 export const ImagesDesktop = {
   'rkh': rkh,
   'leaders': leaders,
+  'bear': bear,
   'beaversSection': beavers360,
   'cubsSection': cubs360,
   'scoutsSection': scouts360,
@@ -54,4 +56,4 @@ export const ImagesDesktop = {
   'FDL_Red': FDL_Red,
 }
 
-export type imageLib = 'rkh' | 'leaders' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';
+export type imageLib = 'rkh' | 'leaders' | 'bear' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';

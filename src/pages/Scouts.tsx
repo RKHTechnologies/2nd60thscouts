@@ -10,6 +10,8 @@ import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Scouts.jpeg';
 import Document from '../Components/Document';
 import Footer from '../Shared/Footer';
+import CalendarLink from '../Components/CalendarLink';
+import Contact from '../Components/Contact';
 
 interface ILogoProps {
   top: number
@@ -106,12 +108,20 @@ const Scouts: FC = () => {
             <WhosWho scouts/>
           </div>
         </Section>
+        
+        <Section id="calendar">
+          <div className="wrapper">
+            <CalendarLink />
+          </div>
+        </Section>
 
         <Section id="uniform">
           <div className="wrapper">
             <BadgeLayout src={badges} />
           </div>
         </Section>
+
+        <Contact />
 
         <Footer />
       </PageBodyContainer>

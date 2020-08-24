@@ -7,11 +7,10 @@ import skillsForLife from '../img/skillsForLife.png';
 import groupImage from '../img/group-of-scouts-in-helmets.jpg';
 import { useHistory } from 'react-router-dom';
 import ScoutSection from '../Components/ScoutSection';
-import calendarIcon from '../img/Calendar.svg';
-import leaders from '../img/leaders_on_poachers.jpg';
 import JumboCard from '../Shared/JumboCard';
 import Footer from '../Shared/Footer';
 import Contact from '../Components/Contact';
+import CalendarLink from '../Components/CalendarLink';
 
 const mobile = "1100px";
 
@@ -115,57 +114,6 @@ const FindOutMore = styled.button`
 `;
 
 
-const CalendarIcon = styled.div`
-  width: 75px;
-  height: 65px;
-  margin-left: 25px;
-  background-color: ${colours.Teal};  
-  background-size: contain;
-  mask: url(${calendarIcon});
-  mask-size: contain;
-`;
-
-const CalendarLink = styled.div`
-  width: 100%;
-  height: 100px;
-  border: 1px solid ${colours.Teal};
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  box-sizing: border-box;
-  font-size: 2em;
-  color: ${colours.Purple};
-  cursor: pointer;
-
-  span {
-    margin-left: 20px;
-    font-weight: 200;
-    color: ${colours.Teal};
-  }
-
-  &:hover {
-    background: ${colours.Teal};
-    color: #fff;
-
-    span {color: #fff;}
-
-    ${CalendarIcon} {
-      background: #fff;
-    }
-  }
-
-  @media(max-width: 750px) {
-    flex-direction: column;
-    font-size: 1.4em;
-    & > span { margin: 0; }
-
-    ${CalendarIcon} {
-      display: none;
-    }
-  }
-`;
 
 const SkillsVideo = styled.video`
   width: 100%;
@@ -205,9 +153,7 @@ const Home: FC = () => {
 
       <Section id="calendar">
         <div className="wrapper">
-          <CalendarLink onClick={() => history.push(`${process.env.PUBLIC_URL}/ourCalendar`)}>
-            What's on?<span> Click to view Our Calendar</span><CalendarIcon />
-          </CalendarLink>
+          <CalendarLink />
         </div>
       </Section>
 

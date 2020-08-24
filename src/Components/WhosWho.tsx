@@ -41,7 +41,7 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
         <>
           <Profile image='FDL_Green' smallImage name="Susanne Pickering" nickname="..." title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="Chris Ardington" nickname="..." title="Cub Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="Sarah ..." nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Sarah Grady" nickname="..." title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="James Hawthorne" nickname="..." title="Assistant Cub Leader" accent="Green" />
         </>
       ) : null}

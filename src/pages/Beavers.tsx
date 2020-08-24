@@ -11,6 +11,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSmile, faCampground, faChild, faPaintBrush, faFutbol, faCompass } from "@fortawesome/free-solid-svg-icons";
 import Document from '../Components/Document';
 import Footer from '../Shared/Footer';
+import CalendarLink from '../Components/CalendarLink';
+import Contact from '../Components/Contact';
+import NeedParents from '../Components/NeedParents';
 
 interface ILogoProps {
   top: number
@@ -209,6 +212,14 @@ const Beavers: FC = () => {
           </div>
         </Section>
 
+        <Section id="calendar">
+          <div className="wrapper">
+            <CalendarLink />
+          </div>
+        </Section>
+
+        <NeedParents />
+
         <Section id="uniform">
           <div className="wrapper">
             <BadgeLayout src={badges} />
@@ -221,6 +232,8 @@ const Beavers: FC = () => {
             <BeaversCharacters />
           </MottoContainer>
         </Section>
+
+        <Contact />
 
         <Footer />
       </PageBodyContainer>
