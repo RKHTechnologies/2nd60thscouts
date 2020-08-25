@@ -118,6 +118,7 @@ const FindOutMore = styled.button`
 const SkillsVideo = styled.video`
   width: 100%;
   margin: auto;
+  display: block;
 `;
 
 const Home: FC = () => {
