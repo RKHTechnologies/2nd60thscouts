@@ -12,7 +12,7 @@ const About: FC = () => {
         <Section id="">
         </Section>
 
-        {/* <Footer /> */}
+        <Footer />
       </PageBodyContainer>
     );
 }

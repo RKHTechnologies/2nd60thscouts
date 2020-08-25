@@ -21,9 +21,9 @@ const HeroBanner = styled.div`
     background-position-y: ${(p: HeroProps):string => p.imageHeight ?? "center"};
     background-position-x: center;
 
-    /* @media(max-width: 700px) {
+    @media(max-width: 700px) {
         height: 300px;
-    } */
+    }
 `;
 
 

@@ -39,8 +39,12 @@ export const PageLogo = styled.img`
       left: calc(50% - 300px);
     }
 
+    @media(max-width: 700px) {
+      top: ${(p:ILogoProps) => `${p.top - 38}%`};
+    }    
+
     @media(max-width: 620px) {
-      top: ${(p:ILogoProps) => `${p.top + 8}%`};
+      top: ${(p:ILogoProps) => `${p.top - 34}%`};
       width: 400px;
       left: calc(50% - 200px);
     }
