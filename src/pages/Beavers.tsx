@@ -34,23 +34,23 @@ export const PageLogo = styled.img`
     width: 800px;
 
     @media(max-width: 850px) {
-      top: ${(p:ILogoProps) => `${p.top + 4}%`};
+      top: ${(p:ILogoProps) => `${p.top + 3}%`};
       width: 600px;
       left: calc(50% - 300px);
     }
 
     @media(max-width: 700px) {
-      top: ${(p:ILogoProps) => `${p.top - 38}%`};
+      top: ${(p:ILogoProps) => `${p.top - 39}%`};
     }    
 
     @media(max-width: 620px) {
-      top: ${(p:ILogoProps) => `${p.top - 34}%`};
+      top: ${(p:ILogoProps) => `${p.top - 35}%`};
       width: 400px;
       left: calc(50% - 200px);
     }
     
-    @media(max-width: 520px) {
-      top: ${(p:ILogoProps) => `${p.top + 7}%`};
+    @media(max-width: 500px) {
+      top: ${(p:ILogoProps) => `${p.top - 34}%`};
       width: 80%;
       left: 10%;
     }    
