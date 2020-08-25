@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colours } from '../Shared/SharedStyles';
+import { colours, Colour } from '../Shared/SharedStyles';
 import { ImagesDesktop } from '../Shared/ImageLib';
 
 const Container = styled.div`
-  background: ${colours.Blue};
+  background: ${(p: IProps) => colours[p.accent]};
   display: grid;
   grid-template-columns: 20% 3fr 1fr 15%;
   grid-template-areas: 
@@ -72,9 +72,13 @@ const Bear = styled.div`
   }
 `;
 
-const NeedParents: FC = () => {
+interface IProps {
+  accent: Colour;
+}
+
+const NeedParents: FC<IProps> = ({ accent }: IProps) => {
   return (
-    <Container>
+    <Container accent={accent}>
       <Title>Parents, we need you</Title>
       <Text>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Text>
       <Bear />

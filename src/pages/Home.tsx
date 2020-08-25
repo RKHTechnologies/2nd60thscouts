@@ -153,7 +153,7 @@ const Home: FC = () => {
 
       <Section id="calendar">
         <div className="wrapper">
-          <CalendarLink />
+          <CalendarLink border="Teal" primary="Teal" secondary="Purple" hover="Teal" />
         </div>
       </Section>
 

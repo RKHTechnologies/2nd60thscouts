@@ -120,11 +120,11 @@ const Cubs: FC = () => {
 
         <Section id="calendar">
           <div className="wrapper">
-            <CalendarLink />
+            <CalendarLink border="Green" primary="Green" secondary="Navy" hover="Navy" />
           </div>
         </Section>
 
-        <NeedParents />
+        <NeedParents accent="Green" />
 
         <Section id="uniform">
           <div className="wrapper">

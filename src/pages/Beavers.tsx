@@ -214,11 +214,11 @@ const Beavers: FC = () => {
 
         <Section id="calendar">
           <div className="wrapper">
-            <CalendarLink />
+            <CalendarLink border="Teal" primary="Teal" secondary="Blue" hover="Teal" />
           </div>
         </Section>
 
-        <NeedParents />
+        <NeedParents accent="Blue" />
 
         <Section id="uniform">
           <div className="wrapper">

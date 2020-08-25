@@ -112,11 +112,11 @@ const Explorers: FC = () => {
 
         <Section id="calendar">
           <div className="wrapper">
-            <CalendarLink />
+            <CalendarLink border="Red" primary="Red" secondary="Navy" hover="Navy" />
           </div>
         </Section>
 
-        <NeedParents />
+        <NeedParents accent="Navy" />
 
         <Section id="uniform">
           <div className="wrapper">
