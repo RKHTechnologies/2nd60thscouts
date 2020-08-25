@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { colours, Colour } from '../Shared/SharedStyles';
+import { colours, Colour, SharedSettings } from '../Shared/SharedStyles';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import styled from 'styled-components';
 
@@ -22,7 +22,7 @@ const DocumentContainer = styled.a`
     background: #c9c9c9;
   }
 
-  @media(max-width: 800px) {
+  @media(max-width: ${SharedSettings.mobile}) {
     width: 96%;
   }
 `;

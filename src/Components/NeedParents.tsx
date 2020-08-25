@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colours, SharedSettings } from '../Shared/SharedStyles';
+import { colours } from '../Shared/SharedStyles';
 import { ImagesDesktop } from '../Shared/ImageLib';
 
 const Container = styled.div`
@@ -13,7 +13,15 @@ const Container = styled.div`
   padding-top: 20px;
   margin-bottom: 40px;
 
-  @media(max-width: ${SharedSettings.mobile}) {
+  @media(max-width: 1350px) {
+    grid-template-columns: 10% 3fr 1fr 5%;
+  }
+
+  @media(max-width: 950px) {
+    grid-template-columns: 4% 3fr 1fr 1%;
+  }
+
+  @media(max-width: 750px) {
     grid-template-columns: 1fr;
     grid-template-areas: 
       'title'
@@ -28,7 +36,7 @@ const Title = styled.div`
   font-size: 3em;
   color: ${colours.light};
 
-  @media(max-width: ${SharedSettings.mobile}) {
+  @media(max-width: 750px) {
     text-align: center;
     font-size: 2em;
   }
@@ -41,7 +49,7 @@ const Text = styled.div`
   margin: 10px auto 25px;
   color: ${colours.light};
 
-  @media(max-width: ${SharedSettings.mobile}) {
+  @media(max-width: 750px) {
     text-align: center;
     font-size: 1.2em;
     padding: 0 10px;
@@ -59,7 +67,7 @@ const Bear = styled.div`
   background-position-y: bottom;
   background-repeat: no-repeat;
 
-  @media(max-width: ${SharedSettings.mobile}) {
+  @media(max-width: 750px) {
     height: 150px;
   }
 `;

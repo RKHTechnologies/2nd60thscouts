@@ -48,7 +48,6 @@ const MainHeader = styled.h1`
 
   @media(max-width: ${SharedSettings.mobile}) {
     font-size: 2.4em;
-    -webkit-text-stroke: 2px ${colours.dark};
   }
 `;
 
