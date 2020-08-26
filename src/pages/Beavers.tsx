@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Hero from '../Shared/Hero';
 import { PageBodyContainer, colours, SharedSettings } from '../Shared/SharedStyles';
 import { Section } from './Home';
-import beavers from '../img/beavers.png';
+import sectionLogo from '../img/beavers.png';
 import badges from '../img/Badge_Placement_Beavers.jpeg';
 import WhosWho from '../Components/WhosWho';
 import { ImagesDesktop } from '../Shared/ImageLib';
@@ -22,38 +22,29 @@ interface ILogoProps {
 export const PageHeading = styled.div`
   font-weight: 400;
   font-size: 1.5em;
-  margin: 40px auto;
+  margin: 0 auto 40px;
   color: ${colours.dark};
   text-align: center;
 `;
 
-export const PageLogo = styled.img`
-    position: absolute;
-    top: ${(p:ILogoProps) => `${p.top}%`};
-    left: calc(50% - 400px);
-    width: 800px;
+export interface SectionProps {
+  image: string;
+}
 
-    @media(max-width: 850px) {
-      top: ${(p:ILogoProps) => `${p.top + 3}%`};
-      width: 600px;
-      left: calc(50% - 300px);
-    }
+export const SectionLogo = styled.div`
+  width: 60%;
+  height: 225px;
+  background: url(${(p: SectionProps) => p.image});
+  background-size: contain;
+  background-position: center;
+  margin: -108px auto 0;
+  background-repeat: no-repeat;
 
-    @media(max-width: 700px) {
-      top: ${(p:ILogoProps) => `${p.top - 39}%`};
-    }    
-
-    @media(max-width: 620px) {
-      top: ${(p:ILogoProps) => `${p.top - 35}%`};
-      width: 400px;
-      left: calc(50% - 200px);
-    }
-    
-    @media(max-width: 500px) {
-      top: ${(p:ILogoProps) => `${p.top - 34}%`};
-      width: 80%;
-      left: 10%;
-    }    
+  @media(max-width: 700px) {
+    width: 75%;
+    height: 150px;
+    margin-top: -75px;
+  }
 `;
 
 export const BadgeLayout = styled.img`
@@ -160,8 +151,7 @@ const Beavers: FC = () => {
     return (
       <PageBodyContainer>
         <Hero image="beaversHero" />
-        <PageLogo src={beavers} top={68} />
-        <PageLogoGap />
+        <SectionLogo image={sectionLogo} />
         
         <Section id="about">
           <div className="wrapper">

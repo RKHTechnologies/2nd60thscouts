@@ -1,10 +1,9 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import Hero from '../Shared/Hero';
-import scouts from '../img/scouts.png';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
-import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout, DocumentContainer } from './Beavers';
+import { PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout, DocumentContainer, SectionLogo } from './Beavers';
 import { faCampground, faChild,faRoute, faUsers, faSnowboarding, faGlobeEurope } from "@fortawesome/free-solid-svg-icons";
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Scouts.jpeg';
@@ -13,35 +12,11 @@ import Footer from '../Shared/Footer';
 import CalendarLink from '../Components/CalendarLink';
 import Contact from '../Components/Contact';
 import NeedParents from '../Components/NeedParents';
+import sectionLogo from '../img/scouts.png';
 
 interface ILogoProps {
   top: number
 }
-
-export const PageLogo = styled.img`
-    position: absolute;
-    top: ${(p:ILogoProps) => `${p.top}%`};
-    left: calc(50% - 400px);
-    width: 800px;
-
-    @media(max-width: 850px) {
-      top: ${(p:ILogoProps) => `${p.top + 1.5}%`};
-      width: 600px;
-      left: calc(50% - 300px);
-    }
-
-    @media(max-width: 620px) {
-      top: ${(p:ILogoProps) => `${p.top + 3}%`};
-      width: 400px;
-      left: calc(50% - 200px);
-    }
-    
-    @media(max-width: 520px) {
-      top: ${(p:ILogoProps) => `${p.top + 3.5}%`};
-      width: 80%;
-      left: 10%;
-    }    
-`;
 
 const ScoutsIcon = styled(Icon)`
   color: ${colours.Purple};
@@ -50,12 +25,20 @@ const ScoutsTitle = styled(Title)`
   color: #004851;
 `;
 
+const ScoutsLogo = styled(SectionLogo)`
+  margin-top: -114px;
+
+  @media(max-width: 700px) {
+    margin-top: -75px;
+  }
+`;
+
+
 const Scouts: FC = () => {
     return (
       <PageBodyContainer>
         <Hero image="scoutsHero" />
-        <PageLogo src={scouts} top={75} />
-        <PageLogoGap />
+        <ScoutsLogo image={sectionLogo} />
         
         <Section id="about">
           <div className="wrapper">

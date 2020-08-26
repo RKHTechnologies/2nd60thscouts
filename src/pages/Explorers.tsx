@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import Hero from '../Shared/Hero';
-import explorers from '../img/explorers.png';
+import sectionLogo from '../img/explorers.png';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import { Section } from './Home';
-import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout, DocumentContainer } from './Beavers';
+import { PageLogoGap, PageHeading, Grid, GridItem, Icon, Title, Description, BadgeLayout, DocumentContainer, SectionLogo } from './Beavers';
 import { faCampground, faChild, faGlobeEurope, faHiking, faMountain, faUsers } from "@fortawesome/free-solid-svg-icons";
 import WhosWho from '../Components/WhosWho';
 import badges from '../img/Badge_Placement_Explorers.jpeg';
@@ -18,31 +18,6 @@ interface ILogoProps {
   top: number
 }
 
-export const PageLogo = styled.img`
-    position: absolute;
-    top: ${(p:ILogoProps) => `${p.top}%`};
-    left: calc(50% - 400px);
-    width: 800px;
-
-    @media(max-width: 850px) {
-      top: ${(p:ILogoProps) => `${p.top + 4}%`};
-      width: 600px;
-      left: calc(50% - 300px);
-    }
-
-    @media(max-width: 620px) {
-      top: ${(p:ILogoProps) => `${p.top + 8}%`};
-      width: 400px;
-      left: calc(50% - 200px);
-    }
-    
-    @media(max-width: 520px) {
-      top: ${(p:ILogoProps) => `${p.top + 7}%`};
-      width: 80%;
-      left: 10%;
-    }    
-`;
-
 const ExplorersIcon = styled(Icon)`
   color: ${colours.Red};
 `;
@@ -50,12 +25,19 @@ const ExplorersTitle = styled(Title)`
   color: #003A82;
 `;
 
+const ExplorersLogo = styled(SectionLogo)`
+  margin-top: -114px;
+
+  @media(max-width: 700px) {
+    margin-top: -75px;
+  }
+`;
+
 const Explorers: FC = () => {
     return (
       <PageBodyContainer>
         <Hero image="expeditionHero" />
-        <PageLogo src={explorers} top={75} />
-        <PageLogoGap />
+        <ExplorersLogo image={sectionLogo} />
         
         <Section id="about">
           <div className="wrapper">
