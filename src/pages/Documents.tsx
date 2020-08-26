@@ -23,6 +23,10 @@ const TextOverlay = styled.div`
     font-size: 10vw;
     font-weight: 600;
   }
+
+  @media(max-width: 700px) {
+    height: 300px;
+  }  
 `;
 
 const GroupContainer = styled.div`
