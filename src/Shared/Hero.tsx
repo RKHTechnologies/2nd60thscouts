@@ -1,8 +1,7 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { imageLib, ImagesDesktop } from './ImageLib';
+import { imageLib, ImagesDesktop, ImagesMobile } from './ImageLib';
 import { useMediaQuery } from 'react-responsive';
-// import { SharedSettings } from './SharedStyles';
 
 interface HeroProps {
     imageUrl: string;
@@ -34,10 +33,10 @@ interface IProps {
 }
 
 const Hero: FC<IProps> = ({image, small, imageHeight}: IProps) => {
-    const mobile = useMediaQuery({query: '(max-width: 1400px)'});
+    const mobile = useMediaQuery({query: '(max-width: 700px)'});
     
     return (
-        <HeroBanner imageUrl={mobile ? ImagesDesktop[image] : ImagesDesktop[image]} small={small} imageHeight={imageHeight} />
+        <HeroBanner imageUrl={mobile ? ImagesMobile[image] : ImagesDesktop[image]} small={small} imageHeight={imageHeight} />
     );
 }
 

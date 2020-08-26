@@ -1,6 +1,8 @@
 import rkh from '../img/RKHT_logo.png';
 import leaders from '../img/leaders_on_poachers.jpg';
 import bear from '../img/bear.png'
+import groupImage from '../img/desktop/group-of-scouts-in-helmets.jpg';
+import groupImageMobile from '../img/mobile/group-of-scouts-in-helmets.jpg';
 
 // Section images
 import beavers360 from '../img/beavers-singing.jpg';
@@ -15,6 +17,14 @@ import expeditionHero from '../img/desktop/explorer-expedition.jpg';
 import beaversHero from '../img/beavers-and-leader.jpg';
 import cubsHero from '../img/cubs-group.jpg';
 import scoutsHero from '../img/scouts-life-jackets.jpg';
+  // Mobile
+import highRopesHeroMobile from '../img/mobile/cub-high-ropes.jpg';
+import kayakingHeroMobile from '../img/mobile/kayaking.jpg';
+import expeditionHeroMobile from '../img/mobile/explorer-expedition.jpg';
+import beaversHeroMobile from '../img/mobile/beavers-and-leader.jpg';
+import cubsHeroMobile from '../img/mobile/cubs-group.jpg';
+import scoutsHeroMobile from '../img/mobile/scouts-life-jackets.jpg';
+
 
 // Profile Images
 import jessica from '../img/desktop/JessicaHoward.jpg';
@@ -34,6 +44,7 @@ export const ImagesDesktop = {
   'rkh': rkh,
   'leaders': leaders,
   'bear': bear,
+  'groupImage': groupImage,
   'beaversSection': beavers360,
   'cubsSection': cubs360,
   'scoutsSection': scouts360,
@@ -56,4 +67,33 @@ export const ImagesDesktop = {
   'FDL_Red': FDL_Red,
 }
 
-export type imageLib = 'rkh' | 'leaders' | 'bear' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';
+
+
+export const ImagesMobile = {
+  'rkh': rkh,
+  'leaders': leaders,
+  'bear': bear,
+  'groupImage': groupImageMobile,
+  'beaversSection': beavers360,
+  'cubsSection': cubs360,
+  'scoutsSection': scouts360,
+  'explorersSection': explorers360,
+  
+  'highRopesHero': highRopesHeroMobile,
+  'kayakingHero': kayakingHeroMobile,
+  'expeditionHero': expeditionHeroMobile,
+  'beaversHero': beaversHeroMobile,
+  'cubsHero': cubsHeroMobile,
+  'scoutsHero': scoutsHeroMobile,
+
+  'jessica': jessica,
+
+  'characters': characters,
+  
+  'FDL_Blue': FDL_Blue,
+  'FDL_Green': FDL_Green,
+  'FDL_Purple': FDL_Purple,
+  'FDL_Red': FDL_Red,
+}
+
+export type imageLib = 'rkh' | 'leaders' | 'bear' | 'groupImage' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';

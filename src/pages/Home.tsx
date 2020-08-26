@@ -4,13 +4,13 @@ import Hero from '../Shared/Hero';
 import { useMediaQuery } from 'react-responsive';
 import { SharedSettings, colours, PageBodyContainer } from '../Shared/SharedStyles';
 import skillsForLife from '../img/skillsForLife.png';
-import groupImage from '../img/group-of-scouts-in-helmets.jpg';
 import { useHistory } from 'react-router-dom';
 import ScoutSection from '../Components/ScoutSection';
 import JumboCard from '../Shared/JumboCard';
 import Footer from '../Shared/Footer';
 import Contact from '../Components/Contact';
 import CalendarLink from '../Components/CalendarLink';
+import { ImagesMobile, ImagesDesktop } from '../Shared/ImageLib';
 
 const mobile = "1100px";
 
@@ -80,16 +80,21 @@ const WelcomeText = styled.p`
   @media(max-width: ${mobile}) { font-size: 1em; }
 `;
 
+interface ImageProps {
+  image: string;
+}
+
 const GroupImage = styled.div`
   grid-area: groupImage;
   margin: 70px;
-  background-image: url(${groupImage});
+  background-image: url(${(p: ImageProps) => p.image});
   background-size: cover;
   background-position: center;
   min-height: 200px;
   
   @media(max-width: 1350px) { margin: 10px }
-  @media(max-width: ${mobile}) { margin: 0 -2%;  }
+  @media(max-width: ${mobile}) { margin: 0 25% }
+  @media(max-width: 700px) { margin: 0 -2% }
 `;
 
 const FindOutMore = styled.button`
@@ -123,9 +128,7 @@ const SkillsVideo = styled.video`
 
 const Home: FC = () => {
   const history = useHistory();
-  const mobile = useMediaQuery({query: '(max-width: 1400px)'});
-
-  console.log("mobile? ", mobile);
+  const mobile = useMediaQuery({query: '(max-width: 470px)'});
 
   return (
     <PageBodyContainer>
@@ -140,7 +143,7 @@ const Home: FC = () => {
               <br /><br />
               Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei.
             </WelcomeText>
-            <GroupImage />
+            <GroupImage image={mobile ? ImagesMobile["groupImage"] : ImagesDesktop["groupImage"]}/>
             <FindOutMore onClick={() => history.push(`${process.env.PUBLIC_URL}/about`)}>Find out more</FindOutMore>
           </WelcomeContainer>
         </div>
