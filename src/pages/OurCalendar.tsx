@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { PageBodyContainer, colours } from '../Shared/SharedStyles';
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
@@ -65,13 +65,22 @@ const CalendarContainer = styled.div`
   }
 `;
 
-const eventHandler = (e: any) => {
-  console.dir(e);
-  console.dir(e.event.title);
-  console.dir(e.event.extendedProps.description);
-}
+
 
 const OurCalendar: FC = () => {
+    const [overlayOpen, setOverlayOpen] = useState(false);
+
+    const eventHandler = (e: any) => {
+      console.dir(e);
+      console.dir(e.event.title);
+      console.dir(e.event.extendedProps.description);
+      setOverlayOpen(!overlayOpen);
+    };
+
+    const handleClose = () => {
+      setOverlayOpen(false);
+    };
+
     return (
       <>
         <PageBodyContainer>     
@@ -86,7 +95,7 @@ const OurCalendar: FC = () => {
             />          
           </CalendarContainer>
         </PageBodyContainer>
-        <ModalOverlay />
+        <ModalOverlay open={overlayOpen} close={handleClose} title="Beavers Event 1"  />
       </>
     );
 }
