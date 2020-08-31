@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.25d05d23.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.25d05d23.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.81d180f9.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.81d180f9.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
     "static/css/2.aa9c7ed0.chunk.css": "/2nd60thscouts/static/css/2.aa9c7ed0.chunk.css",
-    "static/js/2.bcc5aa42.chunk.js": "/2nd60thscouts/static/js/2.bcc5aa42.chunk.js",
-    "static/js/2.bcc5aa42.chunk.js.map": "/2nd60thscouts/static/js/2.bcc5aa42.chunk.js.map",
+    "static/js/2.7a7f9d9a.chunk.js": "/2nd60thscouts/static/js/2.7a7f9d9a.chunk.js",
+    "static/js/2.7a7f9d9a.chunk.js.map": "/2nd60thscouts/static/js/2.7a7f9d9a.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.357dee0885480901050f25604d3faa98.js": "/2nd60thscouts/precache-manifest.357dee0885480901050f25604d3faa98.js",
+    "precache-manifest.63ef33006f1b31a7991152aa01e914ea.js": "/2nd60thscouts/precache-manifest.63ef33006f1b31a7991152aa01e914ea.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/2.aa9c7ed0.chunk.css.map": "/2nd60thscouts/static/css/2.aa9c7ed0.chunk.css.map",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.bcc5aa42.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.bcc5aa42.chunk.js.LICENSE.txt",
+    "static/js/2.7a7f9d9a.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.7a7f9d9a.chunk.js.LICENSE.txt",
     "static/media/Badge_Placement_Beavers.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Beavers.12ef0ab9.jpeg",
     "static/media/Badge_Placement_Cubs.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Cubs.b9626174.jpeg",
     "static/media/Badge_Placement_Explorers.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Explorers.1b9577c8.jpeg",
@@ -57,8 +57,8 @@
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
     "static/css/2.aa9c7ed0.chunk.css",
-    "static/js/2.bcc5aa42.chunk.js",
+    "static/js/2.7a7f9d9a.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.25d05d23.chunk.js"
+    "static/js/main.81d180f9.chunk.js"
   ]
 }
