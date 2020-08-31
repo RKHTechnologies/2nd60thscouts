@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { PageBodyContainer, colours } from '../Shared/SharedStyles';
+import { PageBodyContainer, colours, Colour } from '../Shared/SharedStyles';
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import styled from 'styled-components';
@@ -69,12 +69,37 @@ const CalendarContainer = styled.div`
 
 const OurCalendar: FC = () => {
     const [overlayOpen, setOverlayOpen] = useState(false);
+    const [title, setTitle] = useState("");
+    const [description, setDescription] = useState("");
+    const [accent, setAccent] = useState<Colour>("grey60");
 
     const eventHandler = (e: any) => {
-      console.dir(e);
-      console.dir(e.event.title);
-      console.dir(e.event.extendedProps.description);
-      setOverlayOpen(!overlayOpen);
+      const className = e.event.classNames[0];
+
+      switch (className) {
+        case "any":
+          setAccent("Teal");
+          break;
+        case "beavers":
+          setAccent("Blue");
+          break;
+        case "cubs":
+          setAccent("Green");
+          break;
+        case "scouts":
+          setAccent("Purple");
+          break;
+        case "explorers":
+          setAccent("Red");
+          break;
+        default:
+          setAccent("Pink");
+          break;
+      }
+
+      setTitle(e.event.title)
+      setDescription(e.event.extendedProps.description)
+      setOverlayOpen(true);
     };
 
     const handleClose = () => {
@@ -95,7 +120,7 @@ const OurCalendar: FC = () => {
             />          
           </CalendarContainer>
         </PageBodyContainer>
-        <ModalOverlay open={overlayOpen} close={handleClose} title="Beavers Event 1"  />
+        <ModalOverlay open={overlayOpen} close={handleClose} title={title} description={description} accent={accent} />
       </>
     );
 }

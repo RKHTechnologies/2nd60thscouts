@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colours } from '../Shared/SharedStyles';
+import { colours, Colour } from '../Shared/SharedStyles';
 
 const PageBlur = styled.div`
   position: fixed;
@@ -16,7 +16,6 @@ const PageBlur = styled.div`
 interface ICardProps {
   open: boolean;
 }
-
 const MainCard = styled.div`
   position: fixed;
   transition: all 0.3s ease;
@@ -28,17 +27,23 @@ const MainCard = styled.div`
   background: #f1f1f1;
 `;
 
+
+interface IHeaderProps {
+  open: boolean;
+  background: Colour;
+}
 const Header = styled.div`
-  background: ${colours.Teal};
+  background: ${(p: IHeaderProps) => colours[p.background]};
+  transition: all 0.3s ease;
   color: white;
-  height: 70px;
+  height: ${(p: IHeaderProps) => p.open ? "70px" : 0};
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: 30px;
   box-sizing: border-box;
-  font-size: 2em;
+  font-size: ${(p: IHeaderProps) => p.open ? "2em" : 0};
   font-weight: 300;
   position: relative;
 `;
@@ -51,19 +56,22 @@ const Close = styled.div`
 
 interface IProps {
   open: boolean;
-  title: string;
   close(): void;
+  title: string;
+  description: string;
+  accent: Colour;
 }
 
-const ModalOverlay: FC<IProps> = ({ open, title, close }: IProps) => {
+const ModalOverlay: FC<IProps> = ({ open, close, title, description, accent }: IProps) => {
   return (
     <>
       {open && <PageBlur />}
       <MainCard open={open}>
-        <Header>
+        <Header open={open} background={accent}>
           {title}
           <Close onClick={close}>X</Close>
         </Header>
+        {description} 
       </MainCard>
     </>
   );
