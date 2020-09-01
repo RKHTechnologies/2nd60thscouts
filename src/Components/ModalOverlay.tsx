@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
 import { colours, Colour } from '../Shared/SharedStyles';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes, faMapMarkerAlt, faCalendarDay, faClock } from '@fortawesome/free-solid-svg-icons';
 
 const PageBlur = styled.div`
   position: fixed;
@@ -51,7 +53,44 @@ const Header = styled.div`
 const Close = styled.div`
   width: 40px;
   height: 40px;
+  width: 50px;
+  border-radius: 6px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: #ffffff5e;
+  }
 `;
+
+
+interface IDescriptionProps {
+  open: boolean;
+  accent: Colour;
+}
+
+const Description = styled.div`
+  font-size: ${(p: IDescriptionProps) => p.open ? "1em" : 0};
+  font-weight: 100;
+  padding: 30px;
+
+  div {
+    font-weight: 100;
+    padding-top: 30px;
+
+    svg {
+      margin-right: 10px;
+      margin-bottom: -7px;
+      margin-top: 2px;
+      color: ${(p: IDescriptionProps) => colours[p.accent]};
+    }
+  }
+`;
+
 
 
 interface IProps {
@@ -60,18 +99,35 @@ interface IProps {
   title: string;
   description: string;
   accent: Colour;
+  startDate: string;
 }
 
-const ModalOverlay: FC<IProps> = ({ open, close, title, description, accent }: IProps) => {
+const ModalOverlay: FC<IProps> = ({ open, close, title, description, accent, startDate }: IProps) => {
   return (
     <>
       {open && <PageBlur />}
       <MainCard open={open}>
         <Header open={open} background={accent}>
           {title}
-          <Close onClick={close}>X</Close>
+          <Close onClick={close}>
+            <FontAwesomeIcon icon={faTimes} />
+          </Close>
         </Header>
-        {description} 
+        <Description open={open} accent={accent}>
+          {description} 
+          <div>
+            <FontAwesomeIcon icon={faCalendarDay} size="2x" />
+            {startDate}
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faClock} size="2x" />
+            18:00
+          </div>
+          <div>
+            <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
+            Scout Hut
+          </div>
+        </Description>
       </MainCard>
     </>
   );

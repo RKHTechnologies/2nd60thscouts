@@ -72,6 +72,7 @@ const OurCalendar: FC = () => {
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
     const [accent, setAccent] = useState<Colour>("grey60");
+    const [startDate, setStartDate] = useState("2001-01-01");
 
     const eventHandler = (e: any) => {
       const className = e.event.classNames[0];
@@ -99,6 +100,8 @@ const OurCalendar: FC = () => {
 
       setTitle(e.event.title)
       setDescription(e.event.extendedProps.description)
+      console.dir(e.event.start);
+      // setStartDate(e.event.start);
       setOverlayOpen(true);
     };
 
@@ -120,7 +123,7 @@ const OurCalendar: FC = () => {
             />          
           </CalendarContainer>
         </PageBodyContainer>
-        <ModalOverlay open={overlayOpen} close={handleClose} title={title} description={description} accent={accent} />
+        <ModalOverlay open={overlayOpen} close={handleClose} title={title} description={description} accent={accent} startDate={startDate} />
       </>
     );
 }
