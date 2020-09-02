@@ -6,7 +6,7 @@ export const CalendarEvents = [
     className: 'scouts',
   },
   { 
-    title: 'Beavers Event 1', 
+    title: 'Beavers Event - long name test', 
     description: "Beavers Description",
     location: "Scout Hut",
     start: '2020-09-25',
@@ -29,8 +29,10 @@ export const CalendarEvents = [
     className: 'explorers',
   },
   { 
-    title: 'Event for all', 
-    description: 'event for all',
+    title: 'Event for all sections', 
+    description: 'Really long event, spanning over the weekend. Also has this quite long description so I can test that the desciption wraps nicely in the modal. Hopefully this looks good on mobile still',
+    location: "A camp site somewhere",
+    time: '15:00',
     start: '2020-09-02',
     end: '2020-09-09',
     className: 'all',

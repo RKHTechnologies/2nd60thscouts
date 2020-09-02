@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-import { colours, Colour } from '../Shared/SharedStyles';
+import { colours, Colour, SharedSettings } from '../Shared/SharedStyles';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faMapMarkerAlt, faCalendarDay, faClock } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,6 +29,13 @@ const MainCard = styled.div`
   z-index: 3;
   background: #f1f1f1;
   overflow: hidden;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    width: 96%;
+    left: 2%;
+    height: ${(p: ICardProps) => p.open ? "90%" : 0};
+    top: ${(p: ICardProps) => p.open ? "5%" : "-10%"};;
+  }
 `;
 
 
@@ -40,7 +47,8 @@ const Header = styled.div`
   background: ${(p: IHeaderProps) => colours[p.background]};
   transition: all 0.3s ease;
   color: white;
-  height: ${(p: IHeaderProps) => p.open ? "70px" : 0};
+  min-height: ${(p: IHeaderProps) => p.open ? "70px" : 0};
+  padding: 12px 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -51,6 +59,7 @@ const Header = styled.div`
   font-weight: 300;
   position: relative;
   overflow: hidden;
+  line-height: 30px;
 `;
 
 const Close = styled.div`

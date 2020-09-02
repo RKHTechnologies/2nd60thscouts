@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { PageBodyContainer, colours, Colour } from '../Shared/SharedStyles';
+import { colours, Colour, SharedSettings } from '../Shared/SharedStyles';
 import FullCalendar from '@fullcalendar/react'
 import dayGridPlugin from '@fullcalendar/daygrid'
 import styled from 'styled-components';
@@ -7,11 +7,36 @@ import { CalendarEvents } from './OurCalendarEvents';
 import ModalOverlay from '../Components/ModalOverlay';
 import moment from 'moment';
 
+const PageContainer = styled.div`
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    top: 50px;
+  }
+`;
+
 const CalendarContainer = styled.div`
   width: 92%;
   height: calc(100vh - 200px);
   margin: auto;
   margin-top: 60px;
+
+  @media(max-width: ${SharedSettings.mobile}) { 
+    width: 98%;
+    height: calc(100vh - 120px);
+    
+    .fc-today-button { display: none; } 
+  }
+
+  .fc-button, .fc-button:active, .fc-button:focus {
+    background: ${colours.Purple};
+    border-color: ${colours.Purple};
+  }
+  
 
   .fc-toolbar-title {
     font-weight: 100;
@@ -136,7 +161,7 @@ const OurCalendar: FC = () => {
 
     return (
       <>
-        <PageBodyContainer>     
+        <PageContainer>     
           <CalendarContainer>
             <FullCalendar 
               plugins={[ dayGridPlugin ]}
@@ -147,7 +172,7 @@ const OurCalendar: FC = () => {
               eventClick={e => eventHandler(e)}
             />          
           </CalendarContainer>
-        </PageBodyContainer>
+        </PageContainer>
         <ModalOverlay open={overlayOpen} close={handleClose} title={title} description={description} accent={accent} startDate={startDate} endDate={endDate} time={time} location={location} />
       </>
     );
