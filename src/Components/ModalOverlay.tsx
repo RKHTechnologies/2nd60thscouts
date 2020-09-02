@@ -20,13 +20,15 @@ interface ICardProps {
 }
 const MainCard = styled.div`
   position: fixed;
-  transition: all 0.3s ease;
-  width: ${(p: ICardProps) => p.open ? "40%" : 0};
+  transition: all 0.2s ease;
+  /* width: ${(p: ICardProps) => p.open ? "40%" : 0};*/
+  width: 40%;
   height: ${(p: ICardProps) => p.open ? "50%" : 0};
-  top: 24%;
+  top: ${(p: ICardProps) => p.open ? "24%" : "-10%"};;
   left: 30%;
   z-index: 3;
   background: #f1f1f1;
+  overflow: hidden;
 `;
 
 
@@ -48,6 +50,7 @@ const Header = styled.div`
   font-size: ${(p: IHeaderProps) => p.open ? "2em" : 0};
   font-weight: 300;
   position: relative;
+  overflow: hidden;
 `;
 
 const Close = styled.div`
@@ -77,6 +80,7 @@ const Description = styled.div`
   font-size: ${(p: IDescriptionProps) => p.open ? "1em" : 0};
   font-weight: 100;
   padding: 30px;
+  overflow: hidden;
 
   div {
     font-weight: 100;
@@ -89,6 +93,10 @@ const Description = styled.div`
       color: ${(p: IDescriptionProps) => colours[p.accent]};
     }
   }
+
+  span {
+    font-weight: 100;
+  }
 `;
 
 
@@ -100,9 +108,12 @@ interface IProps {
   description: string;
   accent: Colour;
   startDate: string;
+  endDate: string;
+  time: string;
+  location: string;
 }
 
-const ModalOverlay: FC<IProps> = ({ open, close, title, description, accent, startDate }: IProps) => {
+const ModalOverlay: FC<IProps> = ({ open, close, title, description, accent, startDate, endDate, time, location }: IProps) => {
   return (
     <>
       {open && <PageBlur />}
@@ -117,16 +128,18 @@ const ModalOverlay: FC<IProps> = ({ open, close, title, description, accent, sta
           {description} 
           <div>
             <FontAwesomeIcon icon={faCalendarDay} size="2x" />
-            {startDate}
+            {startDate} {endDate && (endDate !== "Invalid date") && (<span>- {endDate}</span>)}
           </div>
-          <div>
+          
+          {time && (<div>
             <FontAwesomeIcon icon={faClock} size="2x" />
-            18:00
-          </div>
-          <div>
+            {time}
+          </div>)}
+
+          {location && <div>
             <FontAwesomeIcon icon={faMapMarkerAlt} size="2x" />
-            Scout Hut
-          </div>
+            {location}
+          </div>}
         </Description>
       </MainCard>
     </>

@@ -5,6 +5,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 import styled from 'styled-components';
 import { CalendarEvents } from './OurCalendarEvents';
 import ModalOverlay from '../Components/ModalOverlay';
+import moment from 'moment';
 
 const CalendarContainer = styled.div`
   width: 92%;
@@ -19,6 +20,24 @@ const CalendarContainer = styled.div`
 
   .fc-daygrid-day-number {
     font-weight: 100;
+  }
+
+  .fc-day-today {
+    background-color: ${colours.Purple}12 !important;
+
+    .fc-daygrid-day-number {
+      border: 2px solid ${colours.Purple};
+      color: #7414dc;
+      border-radius: 50%;
+      height: 22px;
+      width: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 4px;
+      margin-right: 4px;
+      font-weight: 700;
+    }
   }
   
   .fc-event-title {
@@ -69,16 +88,20 @@ const CalendarContainer = styled.div`
 
 const OurCalendar: FC = () => {
     const [overlayOpen, setOverlayOpen] = useState(false);
+    const [accent, setAccent] = useState<Colour>("grey60");
+    
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
-    const [accent, setAccent] = useState<Colour>("grey60");
     const [startDate, setStartDate] = useState("2001-01-01");
+    const [endDate, setEndDate] = useState("2001-01-01");
+    const [time, setTime] = useState("00:00");
+    const [location, setLocation] = useState("");
 
     const eventHandler = (e: any) => {
       const className = e.event.classNames[0];
 
       switch (className) {
-        case "any":
+        case "all":
           setAccent("Teal");
           break;
         case "beavers":
@@ -100,8 +123,10 @@ const OurCalendar: FC = () => {
 
       setTitle(e.event.title)
       setDescription(e.event.extendedProps.description)
-      console.dir(e.event.start);
-      // setStartDate(e.event.start);
+      setStartDate(moment(e.event.start).format("DD/MM/yyyy"));
+      setEndDate(moment(e.event.end).add(-1,'days').format("DD/MM/yyyy"));
+      setTime(e.event.extendedProps.time);
+      setLocation(e.event.extendedProps.location);
       setOverlayOpen(true);
     };
 
@@ -123,7 +148,7 @@ const OurCalendar: FC = () => {
             />          
           </CalendarContainer>
         </PageBodyContainer>
-        <ModalOverlay open={overlayOpen} close={handleClose} title={title} description={description} accent={accent} startDate={startDate} />
+        <ModalOverlay open={overlayOpen} close={handleClose} title={title} description={description} accent={accent} startDate={startDate} endDate={endDate} time={time} location={location} />
       </>
     );
 }
