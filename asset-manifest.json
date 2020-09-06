@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/2nd60thscouts/static/css/main.273edd5c.chunk.css",
-    "main.js": "/2nd60thscouts/static/js/main.3a49604b.chunk.js",
-    "main.js.map": "/2nd60thscouts/static/js/main.3a49604b.chunk.js.map",
+    "main.js": "/2nd60thscouts/static/js/main.218f6b5f.chunk.js",
+    "main.js.map": "/2nd60thscouts/static/js/main.218f6b5f.chunk.js.map",
     "runtime-main.js": "/2nd60thscouts/static/js/runtime-main.068863df.js",
     "runtime-main.js.map": "/2nd60thscouts/static/js/runtime-main.068863df.js.map",
     "static/css/2.aa9c7ed0.chunk.css": "/2nd60thscouts/static/css/2.aa9c7ed0.chunk.css",
-    "static/js/2.cec3275a.chunk.js": "/2nd60thscouts/static/js/2.cec3275a.chunk.js",
-    "static/js/2.cec3275a.chunk.js.map": "/2nd60thscouts/static/js/2.cec3275a.chunk.js.map",
+    "static/js/2.4c6c59f7.chunk.js": "/2nd60thscouts/static/js/2.4c6c59f7.chunk.js",
+    "static/js/2.4c6c59f7.chunk.js.map": "/2nd60thscouts/static/js/2.4c6c59f7.chunk.js.map",
     "index.html": "/2nd60thscouts/index.html",
-    "precache-manifest.b735208ce9caad525af4d5f2c78489ec.js": "/2nd60thscouts/precache-manifest.b735208ce9caad525af4d5f2c78489ec.js",
+    "precache-manifest.069125931ef99e964343eab747273859.js": "/2nd60thscouts/precache-manifest.069125931ef99e964343eab747273859.js",
     "service-worker.js": "/2nd60thscouts/service-worker.js",
     "static/css/2.aa9c7ed0.chunk.css.map": "/2nd60thscouts/static/css/2.aa9c7ed0.chunk.css.map",
     "static/css/main.273edd5c.chunk.css.map": "/2nd60thscouts/static/css/main.273edd5c.chunk.css.map",
-    "static/js/2.cec3275a.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.cec3275a.chunk.js.LICENSE.txt",
+    "static/js/2.4c6c59f7.chunk.js.LICENSE.txt": "/2nd60thscouts/static/js/2.4c6c59f7.chunk.js.LICENSE.txt",
+    "static/media/AndyFrancis.jpg": "/2nd60thscouts/static/media/AndyFrancis.bdb88d66.jpg",
     "static/media/Badge_Placement_Beavers.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Beavers.12ef0ab9.jpeg",
     "static/media/Badge_Placement_Cubs.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Cubs.b9626174.jpeg",
     "static/media/Badge_Placement_Explorers.jpeg": "/2nd60thscouts/static/media/Badge_Placement_Explorers.1b9577c8.jpeg",
@@ -25,6 +26,7 @@
     "static/media/FDL_Red.png": "/2nd60thscouts/static/media/FDL_Red.4c9b6c76.png",
     "static/media/GiftAid.pdf": "/2nd60thscouts/static/media/GiftAid.94d44fcc.pdf",
     "static/media/JessicaHoward.jpg": "/2nd60thscouts/static/media/JessicaHoward.244ee1d9.jpg",
+    "static/media/LouiseDowell.jpg": "/2nd60thscouts/static/media/LouiseDowell.c5151c95.jpg",
     "static/media/MembershipForm.pdf": "/2nd60thscouts/static/media/MembershipForm.0f02d755.pdf",
     "static/media/OrderForm.pdf": "/2nd60thscouts/static/media/OrderForm.dad49942.pdf",
     "static/media/PDFtest.pdf": "/2nd60thscouts/static/media/PDFtest.3c3a5fe1.pdf",
@@ -57,8 +59,8 @@
   "entrypoints": [
     "static/js/runtime-main.068863df.js",
     "static/css/2.aa9c7ed0.chunk.css",
-    "static/js/2.cec3275a.chunk.js",
+    "static/js/2.4c6c59f7.chunk.js",
     "static/css/main.273edd5c.chunk.css",
-    "static/js/main.3a49604b.chunk.js"
+    "static/js/main.218f6b5f.chunk.js"
   ]
 }
