@@ -28,6 +28,9 @@ import scoutsHeroMobile from '../img/mobile/scouts-life-jackets.jpg';
 
 // Profile Images
 import jessica from '../img/desktop/JessicaHoward.jpg';
+import louise from '../img/desktop/LouiseDowell.jpg';
+import andy from '../img/desktop/AndyFrancis.jpg';
+
 
 // Beavers Characters
 import characters from '../img/desktop/beavers-characters.png';
@@ -58,6 +61,8 @@ export const ImagesDesktop = {
   'scoutsHero': scoutsHero,
 
   'jessica': jessica,
+  'louise': louise,
+  'andy': andy,
 
   'characters': characters,
   
@@ -87,6 +92,8 @@ export const ImagesMobile = {
   'scoutsHero': scoutsHeroMobile,
 
   'jessica': jessica,
+  'louise': louise,
+  'andy': andy,
 
   'characters': characters,
   
@@ -96,4 +103,4 @@ export const ImagesMobile = {
   'FDL_Red': FDL_Red,
 }
 
-export type imageLib = 'rkh' | 'leaders' | 'bear' | 'groupImage' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';
+export type imageLib = 'rkh' | 'leaders' | 'bear' | 'groupImage' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'louise' | 'andy' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';

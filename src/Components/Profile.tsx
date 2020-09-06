@@ -142,7 +142,7 @@ const Profile: FC<IProps> = ({image, name, nickname, title, accent, smallImage}:
     <ProfileContainer>
       <ProfilePic image={image} accent={accent} smallImage={smallImage} />
       <Name accent={accent}>{name}</Name>
-      <Nickname>"{nickname}"</Nickname>
+      {(nickname !== "...") ? <Nickname>"{nickname}"</Nickname> : null}
       <Title>{title}</Title>
     </ProfileContainer>
   );

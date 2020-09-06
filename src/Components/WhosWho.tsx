@@ -30,8 +30,8 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
     <Container>
       {beavers ? (  
         <>
-          <Profile image='FDL_Blue' smallImage name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Blue" />
-          <Profile image='FDL_Blue' smallImage name="Andy Francis" nickname="Sgt. Tibbs" title="Assistant Beaver Leader" accent="Blue" />
+          <Profile image='louise' name="Louise Dowell" nickname="King Louie" title="Beaver Leader" accent="Blue" />
+          <Profile image='andy' name="Andy Francis" nickname="Sgt. Tibbs" title="Assistant Beaver Leader" accent="Blue" />
           <Profile image="jessica" name="Jessica Howard" nickname="Bagheera" title="Assistant Beaver Leader" accent="Blue" />
           <Profile image='FDL_Blue' smallImage name="Zoe Gamble" nickname="Kaa" title="Young Leader" accent="Blue" />
         </>
@@ -39,7 +39,7 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
 
       {cubs ? (  
         <>
-          <Profile image='FDL_Green' smallImage name="Susanne Pickering" nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='FDL_Green' smallImage name="Susanne Pickering" nickname="Akela" title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="Chris Ardington" nickname="..." title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="Sarah Grady" nickname="..." title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="James Hawthorne" nickname="..." title="Assistant Cub Leader" accent="Green" />
@@ -49,7 +49,7 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
       {scouts ? (  
         <>
           <Profile image='FDL_Purple' smallImage name="Steve Dowell" nickname="Skip" title="Scout Leader" accent="Purple" />
-          <Profile image='FDL_Purple' smallImage name="Andy Francis" nickname="..." title="Scout Leader" accent="Purple" />
+          <Profile image='FDL_Purple' smallImage name="Andy Francis" nickname="Sgt. Tibbs" title="Scout Leader" accent="Purple" />
           <Profile image='FDL_Purple' smallImage name="Chris Ardington" nickname="..." title="Scout Leader" accent="Purple" />
           <Profile image='FDL_Purple' smallImage name="James Hawthorne" nickname="..." title="Assistant Scout Leader" accent="Purple" />
         </>
