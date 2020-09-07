@@ -124,6 +124,11 @@ const SkillsVideo = styled.video`
   width: 100%;
   margin: auto;
   display: block;
+
+  min-height: 100%;
+  min-width: 100%;
+  height: auto !important;
+  /* width: auto !important; */
 `;
 
 const Home: FC = () => {
