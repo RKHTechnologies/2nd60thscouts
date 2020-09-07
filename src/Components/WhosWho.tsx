@@ -39,9 +39,9 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
 
       {cubs ? (  
         <>
-          <Profile image='FDL_Green' smallImage name="Susanne Pickering" nickname="Akela" title="Cub Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="Chris Ardington" nickname="..." title="Cub Leader" accent="Green" />
-          <Profile image='FDL_Green' smallImage name="Sarah Grady" nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='susanne' name="Susanne Pickering" nickname="Akela" title="Cub Leader" accent="Green" />
+          <Profile image='chris' name="Chris Ardington" nickname="..." title="Cub Leader" accent="Green" />
+          <Profile image='sarah' name="Sarah Grady" nickname="Raksha" title="Cub Leader" accent="Green" />
           <Profile image='FDL_Green' smallImage name="James Hawthorne" nickname="..." title="Assistant Cub Leader" accent="Green" />
         </>
       ) : null}
@@ -49,16 +49,16 @@ const WhosWho: FC<IProps> = ({ beavers, cubs, scouts, explorers}: IProps) => {
       {scouts ? (  
         <>
           <Profile image='FDL_Purple' smallImage name="Steve Dowell" nickname="Skip" title="Scout Leader" accent="Purple" />
-          <Profile image='FDL_Purple' smallImage name="Andy Francis" nickname="Sgt. Tibbs" title="Scout Leader" accent="Purple" />
-          <Profile image='FDL_Purple' smallImage name="Chris Ardington" nickname="..." title="Scout Leader" accent="Purple" />
-          <Profile image='FDL_Purple' smallImage name="James Hawthorne" nickname="..." title="Assistant Scout Leader" accent="Purple" />
+          <Profile image='andyScouts' name="Andy Francis" nickname="Sgt. Tibbs" title="Scout Leader" accent="Purple" />
+          <Profile image='chris' name="Chris Ardington" nickname="..." title="Scout Leader" accent="Purple" />
+          <Profile image='james' name="James Hawthorne" nickname="..." title="Assistant Scout Leader" accent="Purple" />
         </>
       ) : null}
 
       {explorers ? (  
         <>
-          <Profile image='FDL_Red' smallImage name="Jacob Illston" nickname="..." title="Explorer Leader" accent="Red" />
-          <Profile image='FDL_Red' smallImage name="Rhys Howard" nickname="..." title="Explorer Leader" accent="Red" />
+          <Profile image='jacob' name="Jacob Illston" nickname="..." title="Explorer Leader" accent="Red" />
+          <Profile image='rhys' name="Rhys Howard" nickname="..." title="Explorer Leader" accent="Red" />
         </>
       ) : null}
     </Container>
