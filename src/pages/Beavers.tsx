@@ -106,6 +106,7 @@ export const Grid = styled.div`
 export const GridItem = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr;
+  grid-template-rows: 50px;
   grid-template-areas: 
     'icon title'
     'icon description';

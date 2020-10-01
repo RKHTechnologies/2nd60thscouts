@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Error404 from './Shared/Error404';
 import HeaderBar from './Shared/HeaderBar';
 import Home from './pages/Home';
-import About from './pages/About';
+// import About from './pages/About';
 import Beavers from './pages/Beavers';
 import Cubs from './pages/Cubs';
 import Scouts from './pages/Scouts';
@@ -21,7 +21,7 @@ function App() {
         <HeaderBar stickyHeader />
         <Switch>
           <Route exact path={`${process.env.PUBLIC_URL}`} component={Home} />
-          <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} />
+          {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} /> */}
           <Route exact path={`${process.env.PUBLIC_URL}/beavers`} component={Beavers} />
           <Route exact path={`${process.env.PUBLIC_URL}/cubs`} component={Cubs} />
           <Route exact path={`${process.env.PUBLIC_URL}/scouts`} component={Scouts} />

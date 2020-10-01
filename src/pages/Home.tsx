@@ -151,7 +151,7 @@ const Home: FC = () => {
               Many people have been Scouts over the years - Could you be the next?
             </WelcomeText>
             <GroupImage image={mobile ? ImagesMobile["groupImage"] : ImagesDesktop["groupImage"]}/>
-            <FindOutMore onClick={() => history.push(`${process.env.PUBLIC_URL}/about`)}>Find out more</FindOutMore>
+            {/* <FindOutMore onClick={() => history.push(`${process.env.PUBLIC_URL}/about`)}>Find out more</FindOutMore> */}
           </WelcomeContainer>
         </div>
       </Section>

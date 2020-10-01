@@ -87,7 +87,7 @@ const Documents: FC = () => {
 
               <DocumentsGroup>
                 <GroupHeader>Lists</GroupHeader>
-                <Document name="Kit List" description="A Parents Guide to Beavers" filename="ParentsGuidetoBeavers.pdf" accent="Blue" />
+                <Document name="Kit List" description="Basic Kit List" filename="BasicKitList.pdf" accent="Green" />
                 {/* <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Red" /> */}
               </DocumentsGroup>
             </GroupContainer>

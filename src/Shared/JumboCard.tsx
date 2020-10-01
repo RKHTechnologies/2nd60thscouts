@@ -143,7 +143,14 @@ interface IProps {
 }
 
 const JumboCard: FC<IProps> = ({ title, text, buttonText, link, colour, image }: IProps) => {
-  const history = useHistory();
+  
+  const handleScroll = () => {
+    window.scrollTo({
+      left: 0,
+      top: document.getElementById('ContactUs')?.offsetTop ?? 0,
+      behavior: 'smooth'
+    });
+  };
   
   return (
     <>
@@ -151,7 +158,7 @@ const JumboCard: FC<IProps> = ({ title, text, buttonText, link, colour, image }:
         <SideContainer>
           <h3>{title}</h3>
           <p>{text}</p>
-          <Button onClick={() => history.push(`${process.env.PUBLIC_URL}${link}`)}>{buttonText}</Button>
+          <Button onClick={handleScroll}>{buttonText}</Button>
         </SideContainer>
         <MainImage image={image}/>
       </JumboCardContainer>

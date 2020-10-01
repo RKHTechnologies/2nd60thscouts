@@ -65,7 +65,7 @@ const Scouts: FC = () => {
               <GridItem>
                 <ScoutsIcon icon={faSnowboarding} size="2x" />
                 <ScoutsTitle>Exciting Activities</ScoutsTitle>
-                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu dissentiet</Description>
+                <Description>As young people move up the sections the more exciting the activities become! Scouts get the opportunity to have a go at things such as Scuba Diving, survival camps &amp; Paintballing to name a few!</Description>
               </GridItem>
 
               <GridItem>
@@ -77,7 +77,7 @@ const Scouts: FC = () => {
               <GridItem>
                 <ScoutsIcon icon={faRoute} size="2x" />
                 <ScoutsTitle>Advanced Skills</ScoutsTitle>
-                <Description>orem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at</Description>
+                <Description>Skills for life is the moto we work toward sand this starts in Beavers by Scouts we aim to teach more advanced skills in navigation, first aid, mechanics, DIY and cooking.</Description>
               </GridItem>
             </Grid>
           </div>
