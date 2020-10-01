@@ -15,6 +15,7 @@ interface menuProps {
 const HeaderNav = styled.div`
     position: ${(p: IProps) => p.stickyHeader ? "fixed" : "absolute"};
     top: ${(p: IProps) => p.stickyHeader ? "0" : "100vh"};
+    box-shadow: ${(p: IProps) => p.stickyHeader ? "0 0.25rem 0.125rem 0 rgba(0,0,0,0.025)" : null};
     width: 100%;
     height: 100px;
     display: flex;
