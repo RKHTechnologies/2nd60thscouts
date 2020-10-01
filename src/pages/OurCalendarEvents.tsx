@@ -48,6 +48,20 @@ export const CalendarEvents = [
     time: '19:00 - 20:00',
     className: 'scouts',
   },
+  { 
+    title: 'Cubs', 
+    description: "Weekly Cubs Meeting",
+    start: '2020-10-08',
+    time: '19:00 - 20:00',
+    className: 'cubs',
+  },
+  { 
+    title: 'Cubs', 
+    description: "Weekly Cubs Meeting",
+    start: '2020-10-15',
+    time: '19:00 - 20:00',
+    className: 'cubs',
+  },
 
   
 ];
