@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bb9ca3f50e8890b86b724f576fe4d7c7",
+    "revision": "e2bcb35819eeb1a136a01c99e42f2018",
     "url": "/2nd60thscouts/index.html"
   },
   {
-    "revision": "fd151701945a94956c33",
+    "revision": "7ccb3adc4b7dbb5bf228",
     "url": "/2nd60thscouts/static/css/2.aa9c7ed0.chunk.css"
   },
   {
-    "revision": "5f8abc587f95cb912d8f",
+    "revision": "dc03701f6a117f2256ae",
     "url": "/2nd60thscouts/static/css/main.273edd5c.chunk.css"
   },
   {
-    "revision": "fd151701945a94956c33",
-    "url": "/2nd60thscouts/static/js/2.e890f9a0.chunk.js"
+    "revision": "7ccb3adc4b7dbb5bf228",
+    "url": "/2nd60thscouts/static/js/2.78ab80a1.chunk.js"
   },
   {
     "revision": "5033d698e57fabc4eb9a220903e73636",
-    "url": "/2nd60thscouts/static/js/2.e890f9a0.chunk.js.LICENSE.txt"
+    "url": "/2nd60thscouts/static/js/2.78ab80a1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5f8abc587f95cb912d8f",
-    "url": "/2nd60thscouts/static/js/main.26f524f1.chunk.js"
+    "revision": "dc03701f6a117f2256ae",
+    "url": "/2nd60thscouts/static/js/main.a1c5cba7.chunk.js"
   },
   {
     "revision": "7e9dcc1d558cedc56500",
     "url": "/2nd60thscouts/static/js/runtime-main.068863df.js"
+  },
+  {
+    "revision": "db56c6aad69cd98b672f28c1e28ad78c",
+    "url": "/2nd60thscouts/static/media/ActivityInformationAndConsentForm.db56c6aa.pdf"
   },
   {
     "revision": "521df73b5edbab576e9028f80898e5a3",
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e82d120f20ed227dc0c8f13105440903",
     "url": "/2nd60thscouts/static/media/Badge_Placement_Scouts.e82d120f.jpeg"
+  },
+  {
+    "revision": "fa3b595e015f3bcf2601fd6a917ab1c5",
+    "url": "/2nd60thscouts/static/media/BasicKitList.fa3b595e.pdf"
   },
   {
     "revision": "8e124a09a782efad9981f63439f7dbbb",
@@ -138,6 +146,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b0ba857fe807cf2785bfdc313ebe6d34",
     "url": "/2nd60thscouts/static/media/SusannePickering.b0ba857f.jpg"
+  },
+  {
+    "revision": "f6f3c771dca4a79979b7ecb2ce8bb74b",
+    "url": "/2nd60thscouts/static/media/ZoeGamble.f6f3c771.jpg"
   },
   {
     "revision": "d91771fbee7d62a3efabe475ec9e0d57",
