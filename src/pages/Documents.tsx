@@ -74,7 +74,7 @@ const Documents: FC = () => {
                 <Document name="Membership Form" description="Fill in to sign up" filename="MembershipForm.pdf" accent="Red" />
                 <Document name="Order Form" description="Form for Hoodies &amp; Polos" filename="OrderForm.pdf" accent="Red" />
                 <Document name="Gift Aid" description="Form for parents" filename="GiftAid.pdf" accent="Red" />
-                {/* <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Red" /> */}
+                <Document name="Consent Form" description="Activity Info &amp; Consent Form" filename="ActivityInformationAndConsentForm.pdf" accent="Red" />
               </DocumentsGroup>
               
               <DocumentsGroup>
@@ -84,7 +84,15 @@ const Documents: FC = () => {
                 <Document name="Scouts Guide" description="A Parents Guide to Scouts" filename="ParentsGuidetoScouts.pdf" accent="Blue" />
                 <Document name="Explorers Guide" description="A Parents Guide to Explorers" filename="ParentsGuidetoExplorers.pdf" accent="Blue" />
               </DocumentsGroup>
+
+              <DocumentsGroup>
+                <GroupHeader>Lists</GroupHeader>
+                <Document name="Kit List" description="A Parents Guide to Beavers" filename="ParentsGuidetoBeavers.pdf" accent="Blue" />
+                {/* <Document name="Order Form" description="I'm a file description" filename="PDFtest.pdf" accent="Red" /> */}
+              </DocumentsGroup>
             </GroupContainer>
+
+            
           </div>
         </Section>
 

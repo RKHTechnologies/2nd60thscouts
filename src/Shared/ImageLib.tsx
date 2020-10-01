@@ -37,6 +37,7 @@ import chris from '../img/desktop/ChrisArdington.jpg';
 import james from '../img/desktop/JamesHawthorne.jpg';
 import sarah from '../img/desktop/SarahGrady.jpg';
 import susanne from '../img/desktop/SusannePickering.jpg';
+import zoe from '../img/desktop/ZoeGamble.jpg';
 
 
 // Beavers Characters
@@ -77,6 +78,7 @@ export const ImagesDesktop = {
   'james': james,
   'sarah': sarah,
   'susanne': susanne,
+  'zoe': zoe,
 
 
   'characters': characters,
@@ -116,6 +118,7 @@ export const ImagesMobile = {
   'james': james,
   'sarah': sarah,
   'susanne': susanne,
+  'zoe': zoe,
 
   'characters': characters,
   
@@ -125,4 +128,4 @@ export const ImagesMobile = {
   'FDL_Red': FDL_Red,
 }
 
-export type imageLib = 'rkh' | 'leaders' | 'bear' | 'groupImage' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'louise' | 'andy' | 'andyScouts' | 'rhys' | 'jacob' | 'chris' | 'james' | 'sarah' | 'susanne' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';
+export type imageLib = 'rkh' | 'leaders' | 'bear' | 'groupImage' | 'beaversSection' | 'cubsSection' | 'scoutsSection' | 'explorersSection' | 'highRopesHero' | 'kayakingHero' | 'expeditionHero' | 'beaversHero' | 'cubsHero' | 'scoutsHero' | 'jessica' | 'louise' | 'andy' | 'andyScouts' | 'rhys' | 'jacob' | 'chris' | 'james' | 'sarah' | 'susanne' | 'zoe' | 'characters' | 'FDL_Blue' | 'FDL_Green' | 'FDL_Purple' | 'FDL_Red';

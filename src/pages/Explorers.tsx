@@ -52,7 +52,7 @@ const Explorers: FC = () => {
               <GridItem>
                 <ExplorersIcon icon={faChild} size="2x" />
                 <ExplorersTitle>Ages 14 - 18</ExplorersTitle>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
+                <Description>We welcome all young people to come and join the scouting adventure</Description>
               </GridItem>
 
               <GridItem>
