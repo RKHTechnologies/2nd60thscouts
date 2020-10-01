@@ -86,7 +86,8 @@ interface ImageProps {
 
 const GroupImage = styled.div`
   grid-area: groupImage;
-  margin: 70px;
+  margin: 50px;
+  margin-right: 0;
   background-image: url(${(p: ImageProps) => p.image});
   background-size: cover;
   background-position: center;
@@ -139,9 +140,15 @@ const Home: FC = () => {
           <WelcomeContainer>
             <WelcomeTitle>Welcome to <span>2nd 60th Leicester</span></WelcomeTitle>
             <WelcomeText>
-              Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.
-              <br /><br />
-              Vidit dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te facilisis mnesarchum qui posse omnium mediocritatem est cu. Modus argumentum ne qui tation efficiendi in eos. Ei mea falli legere efficiantur et tollit aliquip debitis mei.
+            If you love the great outdoors, learning new skills, meeting new friends, being creative, working as a team and get the opportunity to build in confidence, self esteem and the passion to get more out of life then 2nd 60th Leicester Scout group is the place for you!
+            <br /><br />
+            Based in the heart of Leicester City for over 100 years we offer young people aged 6 - 18 years the opportunity to try a vast range of exciting indoor and outdoor activities at our very own purpose built premises.
+            <br /><br />
+            We welcome Boys and Girls to fulfil their full potential by offering knowledge and experience delivered by our team of fully trained Volunteer Leaders.
+            <br />
+            Adult volunteers are also very welcome to join in the action and to share their expertise either in uniform or behind the scenes.
+            <br /><br />
+            Many people have been Scouts over the years - Could you be the next?
             </WelcomeText>
             <GroupImage image={mobile ? ImagesMobile["groupImage"] : ImagesDesktop["groupImage"]}/>
             <FindOutMore onClick={() => history.push(`${process.env.PUBLIC_URL}/about`)}>Find out more</FindOutMore>
@@ -174,7 +181,7 @@ const Home: FC = () => {
         <div className="wrapper">
           <JumboCard 
             title="Adult Volunteering" 
-            text="Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit dissentiet eoscu eum an brute copiosae hendrerit. Eos erant dolorum an."
+            text="Whatever your skillset, lend a hand for as little or as much time as you can spare, and we promise you’ll get more out than you put in.  Because whether you’re helping a leader to run an activity in the local town hall, organising a night away, or buttering 120 slices of bread a group of very hungry eleven year olds - no two Scout meetings are the same. We provide the training. You show up, get stuck in, and make memories for life."
             buttonText="Join Us"
             link="#joinUs"
             image="leaders"

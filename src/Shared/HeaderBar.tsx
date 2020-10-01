@@ -165,8 +165,8 @@ const BurgerContainer = styled.div`
 
     @media( max-width: 1100px ) {
         display: initial;
-
     }
+    
     @media( max-width: 350px ) {
         right: 5px;
     }

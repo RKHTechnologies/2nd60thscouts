@@ -80,7 +80,7 @@ const NeedParents: FC<IProps> = ({ accent }: IProps) => {
   return (
     <Container accent={accent}>
       <Title>Parents, we need you</Title>
-      <Text>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at vix ad putent delectus delicata usu. Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Text>
+      <Text>Help is needed in many ways and your support is essential for the group to continue running as it should. If you would like to help out a meeting or special event, please speak to the leader in charge - your child will benefit from a demonstration of your commitment to the group.</Text>
       <Bear />
     </Container>
   );

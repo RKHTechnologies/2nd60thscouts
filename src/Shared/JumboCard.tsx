@@ -17,7 +17,7 @@ const JumboCardContainer = styled.div`
   h3 {
       grid-area: title;
       font-size: 3em;
-      margin: 20px 0;
+      margin: 5px 0;
       max-width: 256px;
   }
   p {
@@ -25,15 +25,21 @@ const JumboCardContainer = styled.div`
     font-weight: 400;
     color: ${colours.light};
     width: 100%;
+    font-size: 0.9em;
   }
 
-  @media(max-width: 1355px) {
+  @media(max-width: 1380px) {
     h3 { font-size: 2.6em; }
   }
 
-  @media(max-width: 1230px) {
-    h3 { font-size: 2.3em; }
+  @media(max-width: 1260px) {
+    width: 90%;
   }
+
+  @media(max-width: 1180px) {
+    width: 95%;
+  }
+
 
   @media(max-width: ${SharedSettings.mobile}) {
     width: 100%;
@@ -62,7 +68,7 @@ const SideContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: baseline;
-  padding: 40px;
+  padding: 25px;
   position: relative;
 
   &:after {
