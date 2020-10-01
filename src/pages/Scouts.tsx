@@ -47,19 +47,19 @@ const Scouts: FC = () => {
               <GridItem>
                 <ScoutsIcon icon={faUsers} size="2x" />
                 <ScoutsTitle>Scout Patrols</ScoutsTitle>
-                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu copiosae</Description>
+                <Description>We offer opportunities for leadership and strongly encourage teamwork</Description>
               </GridItem>
               
               <GridItem>
                 <ScoutsIcon icon={faChild} size="2x" />
                 <ScoutsTitle>Ages 10 ½ - 14</ScoutsTitle>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
+                <Description>We welcome all young people to come and join the scouting adventure</Description>
               </GridItem>
 
               <GridItem>
                 <ScoutsIcon icon={faCampground} size="2x" />
                 <ScoutsTitle>Camping</ScoutsTitle>
-                <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at </Description>
+                <Description>Scouts learn various skills, such as map reading, camp cooking and first aid in preparation for camp.</Description>
               </GridItem>
               
               <GridItem>
@@ -71,7 +71,7 @@ const Scouts: FC = () => {
               <GridItem>
                 <ScoutsIcon icon={faGlobeEurope} size="2x" />
                 <ScoutsTitle>International Experiences</ScoutsTitle>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant accommodare an.</Description>
+                <Description>At 2nd 60th we like to provide all our scouts an opportunity to meet with scouts from around the world</Description>
               </GridItem>
 
               <GridItem>

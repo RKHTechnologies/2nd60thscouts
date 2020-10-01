@@ -160,37 +160,37 @@ const Beavers: FC = () => {
               <GridItem>
                 <Icon icon={faSmile} size="2x" />
                 <Title>Friendly Group</Title>
-                <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at </Description>
+                <Description>We are a friendly group based in the heart of Leicester, looking forward to offering you lots of adventure</Description>
               </GridItem>
               
               <GridItem>
                 <Icon icon={faChild} size="2x" />
                 <Title>6 - 8 Year olds</Title>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
+                <Description>We welcome boys and girls from ages 6 to 8, to come along and join the fun</Description>
               </GridItem>
 
               <GridItem>
                 <Icon icon={faPaintBrush} size="2x" />
                 <Title>Arts and Crafts</Title>
-                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu copiosae</Description>
+                <Description>We offer all our young people the chance to be creative</Description>
               </GridItem>
               
               <GridItem>
                 <Icon icon={faFutbol} size="2x" />
                 <Title>Games</Title>
-                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu dissentiet</Description>
+                <Description>We like to play lots of indoor and outdoor games, from board games in the hut - to team games in the park</Description>
               </GridItem>
 
               <GridItem>
                 <Icon icon={faCampground} size="2x" />
                 <Title>Camps and Sleepovers</Title>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant accommodare an.</Description>
+                <Description>This may be the first time your child has a night away from home, rest assured our friendly leadership team will make it a night to remember</Description>
               </GridItem>
 
               <GridItem>
                 <Icon icon={faCompass} size="2x" />
                 <Title>Life Skills</Title>
-                <Description>orem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at</Description>
+                <Description>At 2nd 60th we offer valuable life skills to all our young people, from cooking to first aid - and lots more</Description>
               </GridItem>
             </Grid>
           </div>

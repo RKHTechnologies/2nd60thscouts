@@ -46,37 +46,37 @@ const Cubs: FC = () => {
               <GridItem>
                 <CubsIcon icon={faCampground} size="2x" />
                 <CubsTitle>Camps and Holidays</CubsTitle>
-                <Description>Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at </Description>
+                <Description>There will be lots of opportunities for going on camp, don't forget your midnight feast!</Description>
               </GridItem>
               
               <GridItem>
                 <CubsIcon icon={faChild} size="2x" />
                 <CubsTitle>Ages 8 - 10 ½</CubsTitle>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant dolorum an.</Description>
+                <Description>We welcome boys and girls from ages 8 to 10 ½, to come along and join the fun</Description>
               </GridItem>
 
               <GridItem>
                 <CubsIcon icon={faFutbol} size="2x" />
                 <CubsTitle>Games</CubsTitle>
-                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu copiosae</Description>
+                <Description>We like to play lots of indoor and outdoor games, from board games in the hut - to team games in the park</Description>
               </GridItem>
               
               <GridItem>
                 <CubsIcon icon={faTree} size="2x" />
                 <CubsTitle>Time Outdoors</CubsTitle>
-                <Description>Eos erant dolorum an. Per facer affert ut. Mei iisque mentitum moderatius cu dissentiet</Description>
+                <Description>We like to offer a range of outdoor activities throughout the year, from exploring our local area to lighting fires</Description>
               </GridItem>
 
               <GridItem>
                 <CubsIcon icon={faCompass} size="2x" />
                 <CubsTitle>Life Skills</CubsTitle>
-                <Description>Vidit eume dissentiet eos cu eum an brute copiosae hendrerit. Eos erant accommodare an.</Description>
+                <Description>At 2nd 60th we offer valuable life skills to all our young people, from cooking to first aid - and lots more</Description>
               </GridItem>
 
               <GridItem>
                 <CubsIcon icon={faRoute} size="2x" />
                 <CubsTitle>Working as a pack</CubsTitle>
-                <Description>orem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos at</Description>
+                <Description>Working as a team is a key element to your time in cubs, we offer lots of opporunities for you to be able to do this</Description>
               </GridItem>
             </Grid>
           </div>
