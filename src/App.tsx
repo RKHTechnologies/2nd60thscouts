@@ -20,7 +20,7 @@ function App() {
         <ScrollToTop />
         <HeaderBar stickyHeader />
         <Switch>
-          <Route exact path={`${process.env.PUBLIC_URL}`} component={Home} />
+          <Route exact path={`/`} component={Home} />
           {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About} /> */}
           <Route exact path={`${process.env.PUBLIC_URL}/beavers`} component={Beavers} />
           <Route exact path={`${process.env.PUBLIC_URL}/cubs`} component={Cubs} />
