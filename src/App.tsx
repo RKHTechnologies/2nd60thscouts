@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyle from './Shared/GlobalStyle';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import Error404 from './Shared/Error404';
 import HeaderBar from './Shared/HeaderBar';
 import Home from './pages/Home';
@@ -14,12 +14,9 @@ import Documents from './pages/Documents';
 import ScrollToTop from './ScrollToTop';
 
 function App() {
-
-  console.log("Public URL: ", process.env);
-
   return (
     <>
-      <Router>
+      <>
         <ScrollToTop />
         <HeaderBar stickyHeader />
         <Switch>
@@ -33,7 +30,7 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/documents`} component={Documents} />
           <Route component={Error404} />
         </Switch>
-      </Router>
+      </>
       <GlobalStyle />
     </>
   );
