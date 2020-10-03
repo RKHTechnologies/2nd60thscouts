@@ -14,6 +14,9 @@ import Documents from './pages/Documents';
 import ScrollToTop from './ScrollToTop';
 
 function App() {
+
+  console.log("Public URL: ", process.env);
+
   return (
     <>
       <Router>

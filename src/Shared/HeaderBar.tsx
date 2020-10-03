@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import logo from '../logo.svg';
 import styled from 'styled-components';
 import { colours, SharedSettings } from '../Shared/SharedStyles';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 interface IProps {
     stickyHeader?: boolean;
