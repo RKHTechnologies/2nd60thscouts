@@ -111,6 +111,10 @@ export const GridItem = styled.div`
     'icon title'
     'icon description';
   position: relative;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    grid-template-columns: 50px 1fr;
+  }
 `;
 
 export const Icon = styled(FontAwesomeIcon)`
@@ -121,11 +125,15 @@ export const Icon = styled(FontAwesomeIcon)`
   color: ${colours.Blue};
   position: absolute;
   right: 0;
+
+  @media(max-width: ${SharedSettings.mobile}) {
+    margin: 7px 8px 0;
+  }
 `;
 
 export const Title = styled.h2`
   grid-area: title;
-  width: 85%;
+  width: 100%;
   margin-top: 18px;
   margin-bottom: 0;
   color: ${colours.Blue};
@@ -133,7 +141,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   grid-area: description;
-  width: 85%;
+  width: 98%;
   margin-top: 5px;
   line-height: 24px;
 `;
