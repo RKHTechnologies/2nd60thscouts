@@ -1,6 +1,6 @@
 import React from 'react';
 import GlobalStyle from './Shared/GlobalStyle';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Error404 from './Shared/Error404';
 import HeaderBar from './Shared/HeaderBar';
 import Home from './pages/Home';
