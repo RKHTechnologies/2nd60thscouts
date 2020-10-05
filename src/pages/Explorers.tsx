@@ -69,7 +69,7 @@ const Explorers: FC = () => {
 
               <GridItem>
                 <ExplorersIcon icon={faMountain} size="2x" />
-                <ExplorersTitle>mountaineering</ExplorersTitle>
+                <ExplorersTitle>Mountaineering</ExplorersTitle>
                 <Description>One of the highlights of an Explorer scouts adventure is often mountaineering, reaching the peak is tough; and a great acheivement! </Description>
               </GridItem>
 
