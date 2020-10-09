@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { colours, SharedSettings } from "../Shared/SharedStyles";
+import emailjs from 'emailjs-com';
 
 interface sectionProps {
   dark?: boolean;
@@ -140,26 +141,32 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
-    const data = new FormData(event.target);
 
-    let newObject: any = {};
-    data.forEach((value, key) => {newObject[key] = value});
+    const formData = new FormData(event.target);
 
-    //Not currently used - for future API integration
-    let json = JSON.stringify(newObject);
-    console.dir(json);
+    let data: any = {};
+    formData.forEach((value, key) => {data[key] = value});
 
-    window.open(
-      `mailto:admin@2nd60thscouts.org
-        ?subject=${newObject.subject}
-        &body=%0D%0A
-        Name: ${newObject.name}%0D%0A
-        Phone: ${newObject.phone}%0D%0A
-        Email: ${newObject.email}%0D%0A%0D%0A
-        Subject: ${newObject.subject}%0D%0A
-        Message: ${newObject.message}`,
-        '_blank'
-    );
+    const returnData = {
+      name: data.name,
+      phone: data.phone,
+      email: data.email,
+      subject: data.subject,
+      message: data.message,
+    }
+
+    emailjs.send('admin_outlook', '260_Contact', returnData, 'user_YDxgyMHIC23AXohprfLhK')
+      .then((result) => {
+          console.log(result.text);
+          // setOverlayOpen(true);
+          // setOverlayText("Form Successfully submitted! We will be in touch as soon as possible")
+      }, (error) => {
+          console.log(error.text);
+          // setOverlayOpen(true);
+          // setOverlayText("Oops, an error occured. Please try again later, or contact us if the issue persists.")
+      });
+
+    event.target.reset();
   }
 
   return (
